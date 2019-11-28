@@ -29,6 +29,8 @@ Today I Learned
 
 -	[JSP](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/JSP.md)
 -	[Redirect & Forward](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/Redirect%26Forward.md)
+-	[EL]()
+-	[JSTL]()
 
 ### Javascript<br>
 
