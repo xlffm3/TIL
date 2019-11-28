@@ -21,6 +21,8 @@ Understanding Programming Language
 
 <br><br>
 
-[Reference] : [Edwith](https://www.edwith.org/boostcourse-web/lecture/16660/)
+[Reference]
+
+-	[프로그래밍 언어의 종류](https://opentutorials.org/course/2471/13907)
 
 ---
