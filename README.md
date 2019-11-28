@@ -23,7 +23,7 @@ Today I Learned
 
 ### JSON<br>
 
--	[JSON](https://github.com/xlffm3/TIL/blob/master/%5BHTTP%5D/HTTP.md)
+-	[JSON](https://github.com/xlffm3/TIL/blob/master/%5BJSON%5D/JSON.md)
 
 ### JSP<br>
 
@@ -46,6 +46,7 @@ Today I Learned
 
 -	[Servlet](https://github.com/xlffm3/TIL/blob/master/%5BServlet%5D/Servlet.md)
 -	[HttpServletRequest & HttpServletResponse](https://github.com/xlffm3/TIL/blob/master/%5BServlet%5D/HttpServletRequest%26HttpServletResponse.md)
+-	[Scope](https://github.com/xlffm3/TIL/blob/master/%5BServlet%5D/Scope.md)
 
 ### ETC<br>
 
