@@ -19,8 +19,8 @@ Today I Learned
 
 ### DB & SQL<br>
 
--	[DB]()
--	[SQL]()
+-	[DB](https://github.com/xlffm3/TIL/blob/master/%5BDB%26SQL%5D/DB.md)
+-	[SQL](https://github.com/xlffm3/TIL/blob/master/%5BDB%26SQL%5D/SQL.md)
 
 ### HTTP<br>
 
@@ -34,8 +34,8 @@ Today I Learned
 
 -	[JSP](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/JSP.md)
 -	[Redirect & Forward](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/Redirect%26Forward.md)
--	[EL]()
--	[JSTL]()
+-	[EL](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/EL.md)
+-	[JSTL](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/JSTL.md)
 
 ### Javascript<br>
 
