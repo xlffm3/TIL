@@ -5,6 +5,12 @@ Today I Learned
 
 ---
 
+### API<br>
+
+-	[API](https://github.com/xlffm3/TIL/blob/master/%5BAPI%5D/API.md)
+-	[Rest API](https://github.com/xlffm3/TIL/blob/master/%5BAPI%5D/RestAPI.md)
+-	[Web API](https://github.com/xlffm3/TIL/blob/master/%5BAPI%5D/WebAPI.md)
+
 ### Ajax<br>
 
 -	[Ajax](https://github.com/xlffm3/TIL/blob/master/%5BAjax%5D/Ajax.md)
