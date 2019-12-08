@@ -46,6 +46,14 @@ function ajax(data) {
 
 <br><br>
 
+### Ajax 응답 처리<br><br>
+
+> -	서버로부터 받아온 JSON 데이터는 문자열 형태이기때문에 브라우저에서 바로 실행이 불가능하다.<br><br>
+> -	문자열을 일일이 파싱하는 불편함을 감수하는 대신, JSON 객체를 통해 JS 객체로 사용이 가능하다.<br><br>
+> -	`var obj = JSON.parse("this.responseText");`
+
+<br><br>
+
 [Reference]
 
 -	[Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)
