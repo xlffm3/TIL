@@ -43,7 +43,9 @@ DOM API
 ### Polyfill<br><br>
 
 > -	낡은 브라우저에서 modern code를 사용하게 해주는 기법이다.<br><br>
-> -	DOM querySelector를 통해 찾은 노드 리스트는 배열이 아니기 때문에, `Array.from` 메서드를 통해 배열로 변경시켜서 forEach를 활용한다.<br><br>
+> -	DOM querySelector를 통해 찾은 노드 리스트는 배열이 아니기 때문에, `Array.from` 메서드를 통해 배열로 변경시켜서 forEach를 활용한다.
+
+<br><br>
 
 ### 참고 코드<br><br>
 
