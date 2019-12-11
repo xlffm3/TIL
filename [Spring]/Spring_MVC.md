@@ -54,8 +54,7 @@ Spring MVC
 ![image](https://user-images.githubusercontent.com/56240505/70580578-a8bc3480-1bf7-11ea-8766-15f426a0df12.png)<br><br>
 
 > -	XML 혹은 Annotation으로 설정한 컨트롤러 및 메서드 정보를 Handler Mapping 객체가 생성되어 관리한다. <br><br>
-> -	Handler Adapter가 실행한 뒤 그 결과를 Model에 받아 다시 Dispatcher Servlet에게 전달한다.<br><br>
-> -	Dispat
+> -	Handler Adapter가 실행한 뒤 그 결과를 Model에 받아 다시 Dispatcher Servlet에게 전달한다.
 
 <br><br>
 

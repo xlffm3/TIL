@@ -182,7 +182,7 @@ public class RoleDao {
 > -	BeanPropertyRowMapper는 DBMS와 JAVA의 명명 규칙을 통일해주는 기능을 제공한다.<br><br>
 > -	Insert 메서드의 경우 Primary Key를 자동으로 생성하는 경우가 존재하며, 생성된 PK를 다시 읽어야 하며 SimpleJdbcInsert 객체가 이를 수행한다.<br><br>
 > -	Insert는 Role 객체의 값을 Map으로 변환하며 JAVA DTO 변수 명을 DB의 column 명으로 변경하여 Map 체를 생성한다.<br><br>
-> -	Update 메서드의 2번째 파라미터 값은 query의 바인딩 요를 매핑시켜주는 객체이며, SqlParameterSource가 role을 Map 객체로 변환시킨다.<br><br>
+> -	Update 메서드의 2번째 파라미터 값은 query의 바인딩 요소를 매핑시켜주는 객체이며, SqlParameterSource가 role을 Map 객체로 변환시킨다.<br><br>
 > -	1건만 조회 및 삭제하는 명령의 경우, 값이 여러 개가 들어가지 않고 1개만 넣어 사용하기 때문에 Collections.singletonMap을 사용한다.<br><br>
 > -	1건만 조회하는 경우, queryForObject 메서드를 사용한다.
 
