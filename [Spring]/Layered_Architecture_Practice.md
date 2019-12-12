@@ -49,7 +49,7 @@ public class DBConfig implements TransactionManagementConfigurer {
 
 ### web.xml<br><br>
 
-> -	프레젠테이션 레이어 부분은 DispatcherServlet이, 그 외의 부분은 ContextLoadedListener가 처리하도록 config 이름 등을 설정한다.<br><br>
+> -	프레젠테이션 레이어 부분은 DispatcherServlet이, 그 외의 부분은 ContextLoadedListener가 처리하도록 config 경로를 각각 WebMvcContextConfiguration와 ApplicationConfig로 설정한다.<br><br>
 > -	filter의 경우, 문자 인코딩에 관련된 내용으로 url-pattern에 대해 필터 적용 범위를 전부(/*)로 지정할 수 있다.
 
 <br><br>
