@@ -19,8 +19,6 @@ Today I Learned
 
 -	[Browser](https://github.com/xlffm3/TIL/blob/master/%5BBrowser%5D/Browser.md)
 
-### CORS<br>
-
 -	[CORS](https://github.com/xlffm3/TIL/blob/master/%5BCORS%5D/CORS.md)
 
 ### DB & SQL<br>
