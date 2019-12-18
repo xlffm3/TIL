@@ -5,62 +5,26 @@ Today I Learned
 
 ---
 
-### API<br>
+### 소개<br>
 
--	[API](https://github.com/xlffm3/TIL/blob/master/%5BAPI%5D/API.md)
--	[Rest API](https://github.com/xlffm3/TIL/blob/master/%5BAPI%5D/RestAPI.md)
--	[Web API](https://github.com/xlffm3/TIL/blob/master/%5BAPI%5D/WebAPI.md)
+-	하루동안 학습한 내용 및 개발 관련 경험 등을 기록으로 남긴다.<br>
+-	끊임없이 성장하는 개발자가 되기 위해 배움을 멈추지 않는다.<br><br>
 
-### Ajax<br>
+### 작성 규칙<br>
 
--	[Ajax](https://github.com/xlffm3/TIL/blob/master/%5BAjax%5D/Ajax.md)
+-	폴더와 파일명은 영어로 작성하며, 가능한 언어나 기술명을 명시한다.<br>
+-	Markdwon으로 작성한다.<br>
+-	Reference를 명시한다.<br><br>
 
-### Browser<br>
+### 분류<br>
 
--	[Browser](https://github.com/xlffm3/TIL/blob/master/%5BBrowser%5D/Browser.md)
+#### ediwth Boost Course : Web Programming<br>
 
--	[CORS](https://github.com/xlffm3/TIL/blob/master/%5BCORS%5D/CORS.md)
-
-### DB & SQL<br>
-
--	[DB](https://github.com/xlffm3/TIL/blob/master/%5BDB%26SQL%5D/DB.md)
--	[SQL](https://github.com/xlffm3/TIL/blob/master/%5BDB%26SQL%5D/SQL.md)
-
-### HTTP<br>
-
--	[HTTP](https://github.com/xlffm3/TIL/blob/master/%5BHTTP%5D/HTTP.md)
-
-### JSON<br>
-
--	[JSON](https://github.com/xlffm3/TIL/blob/master/%5BJSON%5D/JSON.md)
-
-### JSP<br>
-
--	[JSP](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/JSP.md)
--	[Redirect & Forward](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/Redirect%26Forward.md)
--	[EL](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/EL.md)
--	[JSTL](https://github.com/xlffm3/TIL/blob/master/%5BJSP%5D/JSTL.md)
-
-### Javascript<br>
-
--	[Javascript](https://github.com/xlffm3/TIL/blob/master/%5BJavascript%5D/Javascript.md)
--	[Window Object](https://github.com/xlffm3/TIL/blob/master/%5BJavascript%5D/Window_Object.md)
--	[DOM & querySelector](https://github.com/xlffm3/TIL/blob/master/%5BJavascript%5D/DOM%26querySelector.md)
--	[Event](https://github.com/xlffm3/TIL/blob/master/%5BJavascript%5D/Event.md)
-
-### Server<br>
-
--	[WAS](https://github.com/xlffm3/TIL/blob/master/%5BServer%5D/WAS.md)
--	[Web Server](https://github.com/xlffm3/TIL/blob/master/%5BServer%5D/Web_Server.md)
-
-### Servlet<br>
-
--	[Servlet](https://github.com/xlffm3/TIL/blob/master/%5BServlet%5D/Servlet.md)
--	[HttpServletRequest & HttpServletResponse](https://github.com/xlffm3/TIL/blob/master/%5BServlet%5D/HttpServletRequest%26HttpServletResponse.md)
--	[Scope](https://github.com/xlffm3/TIL/blob/master/%5BServlet%5D/Scope.md)
-
-### ETC<br>
-
--	[Understanding Programming Language](https://github.com/xlffm3/TIL/blob/master/%5BETC%5D/Understanding_Programming_Language.md)
+-	웹 프로그래밍
+-	DB 연결 웹 앱
+-	웹 앱 개발 : 예약 서비스 (1/4)
+-	웹 앱 개발 : 예약 서비스 (2/4)
+-	웹 앱 개발 : 예약 서비스 (3/4)
+-	웹 앱 개발 : 예약 서비스 (4/4)
 
 ---
