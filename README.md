@@ -54,7 +54,7 @@ Today I Learned
 	-	[HTML Templating](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/HTMLTemplating.md)
 	-	[Spring 기초](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring.md)
 	-	[Spring IoC/DI Container ](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring_IoC_DI_Container.md)
-	-	[Spring : XML & Config 설정](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring_XML_Config_Practice.md)
+	-	[Spring XML & Config 설정](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring_XML_Config_Practice.md)
 	-	[Spring JDBC](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring_JDBC.md)
 	-	[Spring MVC 기초](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring_MVC.md)
 	-	[Spring MVC 실습](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring_MVC_Practice.md)
