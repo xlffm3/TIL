@@ -51,7 +51,7 @@ Today I Learned
 	-	[Animation](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Animation.md)
 	-	[DOMContentLoaded](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/DOMContentLoaded.md)
 	-	[Event Delegation](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Event_Delegation.md)
-	-	[HTML Templating](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/HTMLTemplating.md)
+	-	[HTML Templating](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/HTML_Templating.md)
 	-	[Spring 기초](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring.md)
 	-	[Spring IoC/DI Container ](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring_IoC_DI_Container.md)
 	-	[Spring XML & Config 설정](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring_XML_Config_Practice.md)
@@ -60,7 +60,7 @@ Today I Learned
 	-	[Spring MVC 실습](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Spring_MVC_Practice.md)
 	-	[Layered Architecture 기초](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Layered_Architecture.md)
 	-	[Layered Architecture 실습](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Layered_Architecture_Practice.md)
-	-	[Rest Controller](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/RestController.md)<br><br>
+	-	[Rest Controller](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/3.WEB_APP_DEV_1/Rest_Controller.md)<br><br>
 -	웹 앱 개발 : 예약 서비스 (2/4)
 	-	[JavaScript : 배열의 함수형 메소드](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/4.WEB_APP_DEV_2/Array_Function.md)
 	-	[JavaScript : 객체 리터럴과 this](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/4.WEB_APP_DEV_2/Object_Literal_This.md)
@@ -68,6 +68,18 @@ Today I Learned
 	-	[JavaScript : Handlebar 라이브러리 활용](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/4.WEB_APP_DEV_2/Handlebar.md)
 	-	[Clean Code](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/4.WEB_APP_DEV_2/Clean_Code.md)<br><br>
 -	웹 앱 개발 : 예약 서비스 (3/4)
+	-	[JavaScript : 생성자 패턴](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/5.WEB_APP_DEV_3/Constructor_Pattern.md)
+	-	[JavaScript : 정규 표현식](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/5.WEB_APP_DEV_3/Regular_Expression.md)
+	-	[Form Data](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/5.WEB_APP_DEV_3/Form_Data.md)
+	-	[상태 정보](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/5.WEB_APP_DEV_3/State_Information.md)
+	-	[Cookie](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/5.WEB_APP_DEV_3/Cookie.md)
+	-	[Session](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/5.WEB_APP_DEV_3/Session.md)
+	-	[Interceptor](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/5.WEB_APP_DEV_3/Interceptor.md)
+	-	[Argument Resolver](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/5.WEB_APP_DEV_3/Argument_Resolver.md)<br><br>
 -	웹 앱 개발 : 예약 서비스 (4/4)
+	-	[File Upload : Front-End](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/6.WEB_APP_DEV_4/File_Upload_FE.md)
+	-	[Logging](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/6.WEB_APP_DEV_4/Logging.md)
+	-	[SLF4J](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/6.WEB_APP_DEV_4/SLF4J.md)
+	-	[File Upload & Download : Back-End](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/6.WEB_APP_DEV_4/File_Upload_Download_BE.md)
 
 ---
