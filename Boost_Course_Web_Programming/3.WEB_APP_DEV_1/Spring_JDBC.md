@@ -5,9 +5,9 @@ Spring JDBC
 
 ### Spring JDBC<br>
 
--	JDBC 프로그래밍 중 반복되는 저수준 개발 요소들은 Spring Framework이 대신 처리해준다.<br><br>
-
 ![image](https://user-images.githubusercontent.com/56240505/70523682-ecc32100-1b86-11ea-9261-f6ccbfef1452.png)<br><br>
+
+-	JDBC 프로그래밍 중 반복되는 저수준 개발 요소들은 Spring Framework이 대신 처리해준다.<br><br>
 
 ### Spring JDBC Packages<br>
 
@@ -42,10 +42,10 @@ Spring JDBC
 
 ### Connection Pool<br>
 
+![image](https://user-images.githubusercontent.com/56240505/70525054-cf438680-1b89-11ea-9339-22bac7beaddf.png)<br><br>
+
 -	DB 연결은 시간 및 리소스 등 비용이 많이 들기 때문에, 커넥션 이 미리 커넥션을 여러 개 맺어둔다.<br><br>
 -	커넥션이 필요할 경우, 커넥션 풀에게 빌려서 사용한 뒤 반납한다.<br><br>
-
-![image](https://user-images.githubusercontent.com/56240505/70525054-cf438680-1b89-11ea-9339-22bac7beaddf.png)<br><br>
 
 ### DataSource<br>
 
@@ -53,11 +53,11 @@ Spring JDBC
 -	커넥션을 얻어오고 반납하는 등의 작업을 수행한다.<br><br>
 -	DataSource로 얻은 Connection 객체는 close 메서드로 반납을 수행한다.<br><br>
 
-![image](https://user-images.githubusercontent.com/56240505/70525422-a8d21b00-1b8a-11ea-8d11-b812fa8c1496.png)<br><br>
-
 ### Practice<br>
 
--	ApplicationConfig.java<br>
+![image](https://user-images.githubusercontent.com/56240505/70525422-a8d21b00-1b8a-11ea-8d11-b812fa8c1496.png)<br><br>
+
+> ApplicationConfig.java<br>
 
 ```java
 @Configuration
@@ -67,7 +67,9 @@ public class ApplicationConfig {
 }
 ```
 
--	DBConfig.java <br>
+<br>
+
+> DBConfig.java <br>
 
 ```java
 @Configuration
@@ -91,7 +93,9 @@ public class DBConfig {
 }
 ```
 
--	RoleDaoSqls.java<br>
+<br>
+
+> RoleDaoSqls.java<br>
 
 ```java
 public class RoleDaoSqls {
@@ -103,7 +107,9 @@ public class RoleDaoSqls {
 }
 ```
 
--	RoleDao.java<br>
+<br>
+
+> RoleDao.java<br>
 
 ```java
 import static kr.or.connect.daoexam.dao.RoleDaoSqls.*; //static import
@@ -141,7 +147,7 @@ public class RoleDao {
     public Role selectById(Integer id) {
       try {
         Map<String, ?> params = Collections.singletonMap("roleId", id);
-        return jdbc.queryForObject(SELECT_BY_ROLE_ID, params, rowMapper);		
+        return jdbc.queryForObject(SELECT_BY_ROLE_ID, params, rowMapper);       
       }catch(EmptyResultDataAccessException e) {
         return null;
       }

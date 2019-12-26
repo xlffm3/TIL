@@ -18,9 +18,9 @@ HTTP
 -	인터넷 상의 자원의 위치를 의미한다.<br><br>
 -	특정 웹 서버의 특정 파일에 접근하기 위한 경로 혹은 주소이다.<br><br>
 
-![httpimage](https://user-images.githubusercontent.com/56240505/69651201-13775700-10b3-11ea-919f-f7c23bf730e8.png)<br><br>
-
 ### HTTP의 작동 방식<br>
+
+![httpimage](https://user-images.githubusercontent.com/56240505/69651201-13775700-10b3-11ea-919f-f7c23bf730e8.png)<br><br>
 
 -	서버 / 클라이언트 모델을 따른다.<br><br>
 -	장점

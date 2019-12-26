@@ -12,6 +12,8 @@ Animation
 
 ### setInterval()<br>
 
+![image](https://user-images.githubusercontent.com/56240505/70497519-c1c0d900-1b56-11ea-98c9-19d633df3c07.png)<br>
+
 ```javascript
 const interval = window.setInterval(()=> {
   console.log('현재시각은', new Date());
@@ -22,8 +24,6 @@ window.clearInterval(interval);
 
 -	비동기 작업이기 때문에, 스택의 작업들로 인해 이벤트 콜백이 지연되어 애니메이션이 매끄럽게 처리되지 않을 수 있다.<br><br>
 -	애니메이션 구현에 잘 사용하지 않는다.<br><br>
-
-![image](https://user-images.githubusercontent.com/56240505/70497519-c1c0d900-1b56-11ea-98c9-19d633df3c07.png)<br><br>
 
 ### setTimeout()<br>
 

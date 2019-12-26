@@ -5,6 +5,8 @@ DOM & querySelector
 
 ### DOM & querySelector<br>
 
+![image](https://user-images.githubusercontent.com/56240505/71048569-fb12cd80-2182-11ea-91b5-a9bea298b522.png)<br><br>
+
 -	브라우저에서는 HTML Element를 DOM(Document Object Model)이라는 객체 형태의 모델로 저장한다.<br><br>
 -	그렇게 저장된 정보를 DOM Tree라고 하며, HTML Element는 Tree 형태로 저장된다.<br><br>
 -	브라우저는 다양한 DOM API를 제공하며, API에는 DOM Tree를 찾고 조작하는 여러 메서드가 포함되어 있다.
@@ -20,7 +22,7 @@ DOM & querySelector
 	document.createTextNode(data) :텍스트 노드를 추가한다.
 	```
 
-<br>![image](https://user-images.githubusercontent.com/56240505/71048569-fb12cd80-2182-11ea-91b5-a9bea298b522.png)<br><br>
+	<br>
 
 ### Reference<br>
 

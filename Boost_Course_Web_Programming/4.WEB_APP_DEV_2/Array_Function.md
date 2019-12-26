@@ -3,7 +3,7 @@ Array Function
 
 ---
 
-### Map & Filter<br><br>
+### Map & Filter<br>
 
 ```javascript
 var filteredData = data.filter(function(v) {

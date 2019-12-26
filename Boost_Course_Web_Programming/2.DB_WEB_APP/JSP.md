@@ -21,9 +21,9 @@ JSP
 
 -	Servlet Life Cycle과 동일하며, 메서드 명만 `_jspInit()`, `_jspService()`, `_jspDestroy()`로 다르다.<br><br>
 
-![image](https://user-images.githubusercontent.com/56240505/69778544-07d97c80-11e8-11ea-9118-10d0130fcfd2.png)<br><br>
-
 ### JSP Grammar<br>
+
+![image](https://user-images.githubusercontent.com/56240505/69778544-07d97c80-11e8-11ea-9118-10d0130fcfd2.png)<br><br>
 
 -	스크립트릿 내부의 Java 코드는 Servlet의 `service()` 메서드 내부의 지역 변수 / 지역 메서드가 된다.<br><br>
 -	선언문의 Java 코드는 `service()` 메서드의 내부가 아닌 외부에 위치하며, 전역 변수 / 전역 메서드가 된다.<br><br>
@@ -33,9 +33,9 @@ JSP
 	-	JSP 주석
 	-	Java 주석<br><br>
 
-![image](https://user-images.githubusercontent.com/56240505/69778876-6d7a3880-11e9-11ea-9085-fcd42ac7c466.png)<br><br>
-
 ### JSP Implicit Objects<br>
+
+![image](https://user-images.githubusercontent.com/56240505/69778876-6d7a3880-11e9-11ea-9085-fcd42ac7c466.png)<br><br>
 
 -	JSP에 입력한 대부분의 코드는 생성되는 Servlet 소스의 `_jspService()` 메서드 안에 삽입되는 코드로 생성된다.<br><br>
 -	`_jspService()`에 삽입된 코드의 윗 부분에 미리 선언된 내장 객체들이 있으며, 이를 JSP에 사용 가능하다.<br><br>

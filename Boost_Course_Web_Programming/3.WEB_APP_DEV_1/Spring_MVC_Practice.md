@@ -49,7 +49,7 @@ Spring MVC Practice
 
 ### Practice 1 : 기본 설정<br>
 
--	WebMvcContextConfiguration.java
+> WebMvcContextConfiguration.java
 
 ```java
 @Configuration

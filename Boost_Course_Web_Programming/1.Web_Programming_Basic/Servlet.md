@@ -5,10 +5,10 @@ Servlet
 
 ### Java Web Application<br>
 
+![servlet1](https://user-images.githubusercontent.com/56240505/69651203-13775700-10b3-11ea-8140-b1bc22adc0a8.png)<br><br>
+
 -	WAS에 설치(deploy)되어 동작하는 어플리케이션이다.<br><br>
 -	JWA에는 HTML, CSS, Image, Java class(including Servlet, package, Interface, and so on) 및 각종 설정 파일 등이 포함된다.<br><br>
-
-![servlet1](https://user-images.githubusercontent.com/56240505/69651203-13775700-10b3-11ea-8140-b1bc22adc0a8.png)<br><br>
 
 ### Servlet<br>
 
@@ -16,9 +16,9 @@ Servlet
 -	HttpServlet class를 상속받아야 한다.<br><br>
 -	3.0 spec 미만인 경우 web.xml 파일에 등록해야 하며, 그 이상 spec의 경우는 web.xml을 사용하지 않고 Java annotation을 활용한다.<br><br>
 
-![servlet2](https://user-images.githubusercontent.com/56240505/69651204-13775700-10b3-11ea-8889-313f7c5e419c.png)<br><br>
-
 ### Servlet Life Cycle<br>
+
+![servlet2](https://user-images.githubusercontent.com/56240505/69651204-13775700-10b3-11ea-8889-313f7c5e419c.png)<br><br>
 
 -	1. WAS는 서블릿 요청을 받으면, 해당 서블릿이 메모리에 있는지 확인한다.
 	-	(메모리에 없다면) 해당 서블릿 클래스를 메모리에 올리고 `init()` 메소드를 실행한다.<br><br>

@@ -5,6 +5,8 @@ Redirect & Forward
 
 ### Redirect<br>
 
+![image](https://user-images.githubusercontent.com/56240505/69779270-c39bab80-11ea-11ea-8f71-abb70936bd79.png)<br><br>
+
 -	HTTP 프로토콜로 정해진 규칙이다.<br><br>
 -	서버는 클라이언트로부터 요청을 받은 후, 클라이언트에게 특정 URL로 이동하라고 요청한다.<br><br>
 -	서버에서 클라이언트에게 응답으로 상태 코드 302와 함께 이동할 URL 정보를 location 헤더에 담아 전송한다.<br><br>
@@ -12,9 +14,9 @@ Redirect & Forward
 -	Redirect는 HttpServletResponse가 가진 `sendRedirect()` 메소드를 사용한다.<br><br>
 -	Redirect는 서버에게 요청을 2번하기 때문에, 각 요청마다 서로 다른 request, response 객체를 이용한다.<br><br>
 
-![image](https://user-images.githubusercontent.com/56240505/69779270-c39bab80-11ea-11ea-8f71-abb70936bd79.png)<br><br>
-
 ### Forward<br>
+
+![image](https://user-images.githubusercontent.com/56240505/69779332-ffcf0c00-11ea-11ea-802f-6270b399c912.png)<br><br>
 
 -	클라이언트가 Servlet1에게 요청을 보낸다.<br><br>
 -	Servlet1은 요청 처리 후, 결과를 request 객체에 저장한다.<br><br>
@@ -22,8 +24,6 @@ Redirect & Forward
 -	Servlet2는 1에게 받은 객체를 활용하여 요청을 처리하고, 웹 브라우저에게 결과를 전송한다.<br><br>
 -	서블릿이 일을 일부만 처리한 뒤 일부는 위임하는 것을 Forward라고 하며, 요청이 1번 밖에 일어나지 않는 점에서 Redirect와 차이가 있다.<br><br>
 -	Forward 경로는 반드시 **" / "** 로 시작하며, 같은 웹 어플리케이션에서만 가능하다.<br><br>
-
-![image](https://user-images.githubusercontent.com/56240505/69779332-ffcf0c00-11ea-11ea-802f-6270b399c912.png)<br><br>
 
 ### Servlet & JSP 연동<br>
 
@@ -33,7 +33,7 @@ Redirect & Forward
 
 ### Redirect 참고 코드<br>
 
--	redirect01.jsp
+> redirect01.jsp<br>
 
 ```javascript
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -43,7 +43,9 @@ Redirect & Forward
 %>    
 ```
 
--	redirect02.jsp
+<br>
+
+> redirect02.jsp<br>
 
 ```javascript
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -64,7 +66,7 @@ redirect된 페이지 입니다.
 
 ### Forward 참고 코드<br>
 
--	FrontServlet.java
+> FrontServlet.java<br>
 
 ```java
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -77,7 +79,9 @@ redirect된 페이지 입니다.
     }
 ```
 
--	NextServlet.java
+<br>
+
+> NextServlet.java<br>
 
 ```java
 protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -101,7 +105,7 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 
 ### Servlet & JSP 연동 참고 코드<br>
 
--	LogicServlet.java
+> LogicServlet.java<br>
 
 ```java
 protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -118,7 +122,9 @@ protected void doGet(HttpServletRequest request, HttpServletResponse response) t
     }
 ```
 
--	result.jsp
+<br>
+
+> result.jsp<br>
 
 ```javascript
 <%@ page language="java" contentType="text/html; charset=UTF-8"

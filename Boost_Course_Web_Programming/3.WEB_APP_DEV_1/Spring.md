@@ -5,6 +5,8 @@ Spring
 
 ### Spring<br>
 
+![image](https://user-images.githubusercontent.com/56240505/70505511-8ed51000-1b6b-11ea-8f38-d4e8bad305cc.png)<br><br>
+
 -	**Framework** : 어떤 프로그램을 만들기 위한 기본 토대 및 환경이며, 중요하고 어렵고 복잡한 부분은 이미 구현되어 있기 때문에 이러한 반제품을 사용하여 제품을 쉽게 제작할 수 있다.<br><br>
 -	라이브러리는 어떤 로직이나 원하는 연산 결과를 얻을 수 있도록 제공하는 함수 또는 그런 기능으로, Framework가 반제품이라면 라이브러리는 반제품을 완제품으로 만들기 위한 도구이다.<br><br>
 -	Spring Framework는 엔터프라이즈 급 어플리케이션을 구축할 수 있는 가벼운 솔루션이자, 모든 과정을 한꺼번에 해결하는 상점인 One-Stop-Shop이다.<br><br>
@@ -14,8 +16,6 @@ Spring
 -	완전한 기능을 갖춘 MVC Framework를 제공한다.<br><br>
 -	AOP를 지원한다.<br><br>
 -	스프링은 도메인 논리 코드와 쉽게 분리될 수 있는 구조를 가지고 있다.<br><br>
-
-![image](https://user-images.githubusercontent.com/56240505/70505511-8ed51000-1b6b-11ea-8f38-d4e8bad305cc.png)<br><br>
 
 ### AOP(Aspect Oriented Programming)와 Instrumentation<br>
 

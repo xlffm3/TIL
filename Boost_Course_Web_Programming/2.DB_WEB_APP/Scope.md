@@ -5,6 +5,8 @@ Scope
 
 ### Scope<br>
 
+![image](https://user-images.githubusercontent.com/56240505/69784645-9dc9d300-11f9-11ea-8b7a-99b94a75780a.png)<br><br>
+
 -	변수가 어떤 범위 내에서 사용될 수 있는 지를 결정하는 단위이다.<br><br>
 -	Page : 페이지 내에서 지역 변수처럼 사용된다.<br><br>
 -	Request : HTTP 요청을 WAS가 받아서 웹 브라우저에게 응답할 때 까지 변수가 유지되는 경우 사용한다.
@@ -13,8 +15,6 @@ Scope
 	-	세션 객체가 생성되서 소멸할 때 까지 유지되기 때문에, 요청이 하나가 아니라 여러 개여도 계속 남아있는 scope이다.<br><br>
 -	Application : 웹 어플리케이션이 시작되고 종료될 때 까지 변수가 유지되는 경우 사용한다.<br><br>
 -	값을 저장할 때는 request 객체의 `setAttribute()` 메소드를 , 값을 읽어 들일 때는 request 객체의 `getAttribute()` 메소드를 사용한다.<br><br>
-
-![image](https://user-images.githubusercontent.com/56240505/69784645-9dc9d300-11f9-11ea-8b7a-99b94a75780a.png)<br><br>
 
 ### Page Scope<br>
 

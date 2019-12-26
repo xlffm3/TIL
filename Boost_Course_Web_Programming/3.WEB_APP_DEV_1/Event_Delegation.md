@@ -5,6 +5,8 @@ Event Delegation
 
 ### Event Bubbling & Capturing<br>
 
+![image](https://user-images.githubusercontent.com/56240505/70501788-698fd400-1b62-11ea-9cea-af53982696c7.png)<br>
+
 ```javascript
 ul.addEventListener("click",function(evt) {
     console.log(evt.currentTarget, evt.target);
@@ -19,8 +21,6 @@ ul.addEventListener("click",function(evt) {
 -	EventListener의 evt 객체는 `evt.target`과 `evt.currentTarget` 두 가지로 나뉜다.<br><br>
 -	`target`은 Event Bubbling의 마지막에 위치한 최하위 요소를 반환하며, 클릭된 요소를 기준으로 사용하는 경우에 사용한다.<br><br>
 -	`currentTarget`은 이벤트가 바인딩 된 요소에 해당하는 요소를 반환한다.<br><br>
-
-![image](https://user-images.githubusercontent.com/56240505/70501788-698fd400-1b62-11ea-9cea-af53982696c7.png)<br><br>
 
 ### Event Delegation<br>
 

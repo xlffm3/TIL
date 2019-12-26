@@ -16,7 +16,7 @@ Spring XML&Config Practice
 -	xml 파일 혹은 Java Config를 이용하여 설정할 수 있다.<br><br>
 -	각각의 방법들은 Reference 사이트를 참고하자.<br><br>
 
-### XML 설정 후 ApplicationContext를 이용해서 실행하기<br><br>
+### XML 설정 후 ApplicationContext를 이용해서 실행하기<br>
 
 ```java
 //applicationContext.XML

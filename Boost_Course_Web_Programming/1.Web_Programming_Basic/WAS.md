@@ -9,9 +9,9 @@ WAS
 -	비즈니스 로직을 클라이언트와 DBMS 사이의 MiddleWare 서버에서 동작하도록 함으로써, 클라이언트는 입력 및 출력만 담당하게 한다.<br><br>
 -	WAS는 일종의 MiddleWare로서 웹 클라이언트(보통 웹 브라우저)의 요청 중 웹 애플리케이션이 동작하도록 지원하는 목적이다.<br><br>
 
-![was1](https://user-images.githubusercontent.com/56240505/69651205-140fed80-10b3-11ea-8b1e-c36c67c902de.png)<br><br>
-
 ### WAS vs Web Server<br>
+
+![was1](https://user-images.githubusercontent.com/56240505/69651205-140fed80-10b3-11ea-8b1e-c36c67c902de.png)<br><br>
 
 -	Web Server는 정적 컨텐츠, WAS는 동적 컨텐츠를 주로 관장한다.<br><br>
 -	Web의 발전으로 동적 컨텐츠가 증가함에 따라, 자원의 효율적인 활용을 위해 WAS의 필요성이 증가했다.<br><br>

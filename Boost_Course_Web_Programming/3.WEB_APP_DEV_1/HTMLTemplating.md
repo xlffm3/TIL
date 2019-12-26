@@ -5,9 +5,9 @@ HTML Templating
 
 ### HTML Templating<br>
 
--	반복적인 HTML 부분을 template로 제작한 뒤, 서버에서 온 JSON 데이터를 결합하여 화면에 추가하는 작업이다.<br><br>
-
 ![image](https://user-images.githubusercontent.com/56240505/70503744-7236d900-1b67-11ea-8a58-7ff2f924e7a6.png)<br><br>
+
+-	반복적인 HTML 부분을 template로 제작한 뒤, 서버에서 온 JSON 데이터를 결합하여 화면에 추가하는 작업이다.<br><br>
 
 ### 참고 코드<br>
 

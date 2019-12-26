@@ -12,9 +12,9 @@ Browser
 -	HTML Parsing 내용이 확인되기 전에 JS 등의 내용이 있다면, 흐름을 방해할 수 있다.<br><br>
 -	따라서 CSS는 head 영역 안, JS는 body tag의 하단에 위치하는게 일반적이다.<br><br>
 
-![browser1](https://user-images.githubusercontent.com/56240505/69651200-12dec080-10b3-11ea-9c16-03309f84d114.png)<br><br>
-
 ### Browser의 작동 방식<br>
+
+![browser1](https://user-images.githubusercontent.com/56240505/69651200-12dec080-10b3-11ea-9c16-03309f84d114.png)<br><br>
 
 -	HTML을 해석해서 DOM Tree를, CSS를 해석해서 CSS Tree(CSS Object Model)을 생성한다.<br><br>
 -	이 과정에서 토큰 단위로 해석되는 Parsing 절차가 필요하다.<br><br>
