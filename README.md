@@ -27,38 +27,25 @@ Today I Learned
 -	[Browser](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/1.Web_Programming_Basic/Browser.md)
 -	[Web Server](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/1.Web_Programming_Basic/Web_Server.md)
 -	[WAS](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/1.Web_Programming_Basic/WAS.md)
--	[Servlet](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/1.Web_Programming_Basic/Servlet.md)</details><details><summary>DB 연결 웹 앱</summary>
+-	[Servlet](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/1.Web_Programming_Basic/Servlet.md)</details>
+
+<details><summary>DB 연결 웹 앱</summary>
 
 -	[JavaScript 기초](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/Javascript.md)
-
 -	[Window 객체](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/Window_Object.md)
-
 -	[DOM & querySelector](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/DOM_querySelector.md)
-
 -	[JavaScript : Event](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/Event.md)
-
 -	[Ajax와 JSON 및 CORS](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/Ajax_JSON_CORS.md)
-
 -	[JSP](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/JSP.md)
-
 -	[Redirect & Forward](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/Redirect_Forward.md)
-
 -	[Scope](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/Scope.md)
-
 -	[EL](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/EL.md)
-
 -	[JSTL](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/JSTL.md)
-
 -	[DB](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/DB.md)
-
 -	[SQL](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/SQL.md)
-
 -	[Maven](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/Maven.md)
-
 -	[JDBC](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/JDBC.md)
-
 -	[Rest API](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/RestAPI.md)
-
 -	[Web API](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/2.DB_WEB_APP/WebAPI.md)</details>
 
 <details><summary>웹 앱 개발 : 예약 서비스 (1/4)</summary>
