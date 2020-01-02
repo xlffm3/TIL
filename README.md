@@ -18,7 +18,7 @@ Today I Learned
 
 ### 분류<br>
 
-#### ***edwith Boost Course : Web Programming***<br>
+### ***edwith Boost Course : Web Programming***<br>
 
 <details><summary>웹 프로그래밍 기초</summary>
 
@@ -93,7 +93,7 @@ Today I Learned
 -	[SLF4J](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/6.WEB_APP_DEV_4/SLF4J.md)
 -	[File Upload & Download : Back-End](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/6.WEB_APP_DEV_4/File_Upload_Download_BE.md)</details>
 
-#### ***C***<br>
+### ***C***<br>
 
 <details><summary>열혈 C 프로그래밍 (윤성우 저)</summary>
 
