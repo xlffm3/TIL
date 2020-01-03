@@ -17,7 +17,9 @@ int main(void){
   int num2;
   num1=0;
   num2=0; //ok
+}
 
+int main(void){
   int num1;
   num1=0; //해당 문장은 변수의 선언문이 아니다.
   int num2; //컴파일 에러가 발생하는 지점
