@@ -8,7 +8,7 @@ Chapter 17 : Pointer to Pointer
 ```c
 int main(void){
   double num = 3.14;
-  double * ptr = $num;
+  double * ptr = &num;
   double ** dptr = &ptr;
 }
 ```
@@ -35,7 +35,7 @@ int main(void){
 }
 ```
 
--	싱글 포인터를 함수에 전달할 경우, 값이 swqp되지 않기 때문에 더블 포인터를 전달한다.<br><br>
+-	싱글 포인터를 함수에 전달할 경우, 값이 swap되지 않기 때문에 더블 포인터를 전달한다.<br><br>
 
 ### 다중 포인터<br>
 
