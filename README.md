@@ -5,20 +5,20 @@ Today I Learned
 
 ---
 
-### 소개<br>
+### 소개
 
 -	하루동안 학습한 내용 및 개발 관련 경험 등을 기록으로 남긴다.<br>
 -	`▶` 로 시작하는 소제목을 클릭하여 세부 문서 목록을 펼치거나 접을 수 있다.<br><br>
 
-### 작성 규칙<br>
+### 작성 규칙
 
 -	폴더와 파일명은 영어로 작성하며, 가능한 언어나 기술명을 명시한다.<br>
 -	Markdwon으로 작성한다.<br>
 -	Reference를 명시한다.<br><br>
 
-### 분류<br>
+### 분류
 
-### ***edwith Boost Course : Web Programming***<br>
+### ***edwith Boost Course : Web Programming***
 
 <details><summary>웹 프로그래밍 기초</summary>
 
@@ -93,7 +93,7 @@ Today I Learned
 -	[SLF4J](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/6.WEB_APP_DEV_4/SLF4J.md)
 -	[File Upload & Download : Back-End](https://github.com/xlffm3/TIL/blob/boostcourse-web/Boost_Course_Web_Programming/6.WEB_APP_DEV_4/File_Upload_Download_BE.md)</details>
 
-### ***C***<br>
+### ***C***
 
 <details><summary>열혈 C 프로그래밍 (윤성우 저)</summary>
 
