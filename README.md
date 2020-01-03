@@ -8,7 +8,7 @@ Today I Learned
 ### 소개<br>
 
 -	하루동안 학습한 내용 및 개발 관련 경험 등을 기록으로 남긴다.<br>
--	`▶` 로 시작하는 소제목을 클릭하여 세부 문서 목록을 확인할 수 있다.<br><br>
+-	`▶` 로 시작하는 소제목을 클릭하여 세부 문서 목록을 펼치거나 접을 수 있다.<br><br>
 
 ### 작성 규칙<br>
 
@@ -97,6 +97,12 @@ Today I Learned
 
 <details><summary>열혈 C 프로그래밍 (윤성우 저)</summary>
 
-</details>
+-	[Chapter 1-11 : C 언어의 기본](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter1-11_C_Language_Basic.md)
+-	[Chapter 12 : 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter12_Pointer.md)
+-	[Chapter 13 : 배열과 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter13_Array_Pointer.md)
+-	[Chapter 14 : 함수와 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter14_Function_Pointer.md)
+-	[Chapter 17 : 다중 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter17_Pointer_to_Pointer.md)
+-	[Chapter 18 : 다차원 배열과 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter18_Multi-Dimensional_Array_Pointer.md)
+-	[Chapter 19 : 함수 포인터와 Void 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter19_Function_Pointer_Void_Pointer.md)</details>
 
 ---
