@@ -1,5 +1,5 @@
-Chapter 1-11 : C Language Basic
--------------------------------
+Chapter 1 - 11 : C Language Basic
+---------------------------------
 
 ---
 
