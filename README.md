@@ -110,6 +110,8 @@ Today I Learned
 -	[Chapter 21 : 문자열 입출력](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter21_String_IO.md)
 -	[Chapter 22 - 23 : 구조체와 사용자 정의 자료형](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter22-23_Structure_Typedef.md)
 -	[Chapter 24 : 파일 입출력](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter24_File_IO.md)
--	[Chapter 25 : 메모리 동적 할당](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter25_Memory_Dynamic_Allocation.md)</details>
+-	[Chapter 25 : 메모리 동적 할당](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter25_Memory_Dynamic_Allocation.md)
+-	[Chapter 26 : 매크로와 선행처리기](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter26_Macro_Preprocessor.md)
+-	[Chapter 27 : 파일 분할 및 헤더 파일 디자인](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter27_File_Split_Header_File_Design.md)</details>
 
 ---
