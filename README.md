@@ -100,12 +100,16 @@ Today I Learned
 
 <details><summary>열혈 C 프로그래밍 (윤성우 저)</summary>
 
--	[Chapter 1-11 : C 언어의 기본](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter1-11_C_Language_Basic.md)
+-	[Chapter 1 - 11 : C 언어의 기본](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter1-11_C_Language_Basic.md)
 -	[Chapter 12 : 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter12_Pointer.md)
 -	[Chapter 13 : 배열과 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter13_Array_Pointer.md)
 -	[Chapter 14 : 함수와 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter14_Function_Pointer.md)
 -	[Chapter 17 : 다중 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter17_Pointer_to_Pointer.md)
 -	[Chapter 18 : 다차원 배열과 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter18_Multi-Dimensional_Array_Pointer.md)
--	[Chapter 19 : 함수 포인터와 Void 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter19_Function_Pointer_Void_Pointer.md)</details>
+-	[Chapter 19 : 함수 포인터와 Void 포인터](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter19_Function_Pointer_Void_Pointer.md)
+-	[Chapter 21 : 문자열 입출력](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter21_String_IO.md)
+-	[Chapter 22 - 23 : 구조체와 사용자 정의 자료형](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter22-23_Structure_Typedef.md)
+-	[Chapter 24 : 파일 입출력](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter24_File_IO.md)
+-	[Chapter 25 : 메모리 동적 할당](https://github.com/xlffm3/TIL/blob/c/Passion_C_Programming/Chapter25_Memory.md)</details>
 
 ---
