@@ -1,5 +1,5 @@
-Chapter 25 : Memory
--------------------
+Chapter 25 : Memory Dynamic Allocation
+--------------------------------------
 
 ---
 
