@@ -59,9 +59,10 @@ int puts(const char * s)
 int fputs(const char * s, FILE * stream);
 
 //문자열 입력 함수
-char str[7]; //매개변수 char * s에 해당
 char * gets(char * s);
 char * gets(char * s, int n, FILE * stream);
+
+char str[7]; //매개변수 char * s에 해당
 fgets(str, sizeof(str), stdin);
 ```
 
