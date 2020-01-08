@@ -3,57 +3,66 @@ Spring JDBC
 
 ---
 
-### Spring JDBC<br>
+Spring JDBC
+-----------
 
 ![image](https://user-images.githubusercontent.com/56240505/70523682-ecc32100-1b86-11ea-9261-f6ccbfef1452.png)<br><br>
 
 -	JDBC 프로그래밍 중 반복되는 저수준 개발 요소들은 Spring Framework이 대신 처리해준다.<br><br>
 
-### Spring JDBC Packages<br>
+Spring JDBC Packages
+--------------------
 
 -	org.springframework.jdbc.core : JdbcTemplate 및 관련 Helper 객체를 제공한다.<br><br>
 -	org.springframework.jdbc.datasource : DataSource를 쉽게 접근하기 위한 유틸 클래스, 트랜젝션매니져 및 다양한 DataSource 구현을 제공한다.<br><br>
 -	org.springframework.jdbc.object : RDBMS 조회, 갱신, 저장등을 안전하고 재사용 가능한 객제를 제공한다.<br><br>
 -	org.springframework.jdbc.support : jdbc.core 및 jdbc.object를 사용하는 JDBC 프레임워크를 지원한다.<br><br>
 
-### JDBC Template<br>
+JDBC Template
+-------------
 
 -	리소스 생성, 해지를 처리해서 연결을 닫는 것을 잊어 발생하는 문제 등을 피할 수 있도록 한다.<br><br>
 -	스테이먼트(Statement)의 생성과 실행을 처리한다.<br><br>
 -	SQL 조회, 업데이트, 저장 프로시저 호출, ResultSet 반복호출 등을 실행한다.<br><br>
 -	JDBC 예외가 발생할 경우 org.springframework.dao패키지에 정의되어 있는 일반적인 예외로 변환시킨다.<br><br>
 
-### 그 외의 접근 방식<br>
+그 외의 접근 방식
+-----------------
 
 -	NamedParameterJdbcTemplate : JdbcTemplate에서 JDBC statement 인자를 ?를 사용하는 대신 파라미터명을 사용하여 작성하는 것을 지원한다.<br><br>
 -	SimpleJdbcInsert : 테이블에 쉽게 데이터 insert 기능을 제공한다.<br><br>
 -	MyBatis 및 JPA 등 JDBC 프로그래밍을 더욱 쉽게 하는 기술이 존재한다.<br><br>
 
-### DTO(Data Transfer Object)<br>
+DTO(Data Transfer Object)
+-------------------------
 
 -	계층간 데이터 교환을 위한 자바 빈즈이다.<br><br>
 -	여기서의 계층이란 컨트롤러 뷰, 비지니스 계층, 퍼시스턴스 계층을 의미한다.<br><br>
 -	일반적으로 DTO는 로직을 가지고 있지 않고, 순수한 데이터 객체이다.<br><br>
 -	필드와 getter, setter를 가지며, 추가적으로 toString(), equals(), hashCode()등의 Object 메소드를 오버라이딩 할 수 있다.<br><br>
 
-### DAO(Data Access Object)<br>
+DAO(Data Access Object)
+-----------------------
 
 -	데이터를 조회하거나 조작하는 기능을 전담하도록 만든 객체이다.<br><br>
 
-### Connection Pool<br>
+Connection Pool
+---------------
 
 ![image](https://user-images.githubusercontent.com/56240505/70525054-cf438680-1b89-11ea-9339-22bac7beaddf.png)<br><br>
 
 -	DB 연결은 시간 및 리소스 등 비용이 많이 들기 때문에, 커넥션 이 미리 커넥션을 여러 개 맺어둔다.<br><br>
 -	커넥션이 필요할 경우, 커넥션 풀에게 빌려서 사용한 뒤 반납한다.<br><br>
 
-### DataSource<br>
+DataSource
+----------
 
 -	커넥션 풀은 경우에 따라서 여러 개 생성될 수 있으며, 그러한 커넥션 풀을 관리하는 목적으로 사용되는 것이 DataSource이다.<br><br>
 -	커넥션을 얻어오고 반납하는 등의 작업을 수행한다.<br><br>
 -	DataSource로 얻은 Connection 객체는 close 메서드로 반납을 수행한다.<br><br>
 
-### Practice<br>
+Practice
+--------
 
 ![image](https://user-images.githubusercontent.com/56240505/70525422-a8d21b00-1b8a-11ea-8d11-b812fa8c1496.png)<br><br>
 
@@ -161,14 +170,15 @@ public class RoleDao {
 -	selectAll의 emptyMap은 sql query에 바인딩 할 값이 존재한다면 바인딩 할 값을 전달할 목적으로 사용하는 객체이다.<br><br>
 -	rowMapper는 select 한 건의 결과를 DTO에 저장하는 목적이며, `BeanPropertyRowMapper` 객체를 이용해서 column의 값을 DTO에 자동으로 저장해준다.<br><br>
 -	query 메서드는 결과가 여러 건일 때, 내부적으로 반복하여 DTO를 생성하고 List에 담아 전달한다.<br><br>
--	`BeanPropertyRowMapper`는 DBMS와 JAVA의 명명 규칙을 통일해주는 기능을 제공한다.<br><br>
+-	`BeanPropertyRowMapper`는 DBMS와 Java의 명명 규칙을 통일해주는 기능을 제공한다.<br><br>
 -	Insert 메서드의 경우 Primary Key를 자동으로 생성하는 경우가 존재하며, 생성된 PK를 다시 읽어야 하며 SimpleJdbcInsert 객체가 이를 수행한다.<br><br>
--	Insert는 Role 객체의 값을 Map으로 변환하며 JAVA DTO 변수 명을 DB의 column 명으로 변경하여 Map 체를 생성한다.<br><br>
+-	Insert는 Role 객체의 값을 Map으로 변환하며 Java DTO 변수명을 DB의 column 명으로 변경하여 Map 객체를 생성한다.<br><br>
 -	Update 메서드의 2번째 파라미터 값은 query의 바인딩 요소를 매핑시켜주는 객체이며, `SqlParameterSource`가 role을 Map 객체로 변환시킨다.<br><br>
 -	1건만 조회 및 삭제하는 명령의 경우, 값이 여러 개가 들어가지 않고 1개만 넣어 사용하기 때문에 `Collections.singletonMap`을 사용한다.<br><br>
 -	1건만 조회하는 경우, `queryForObject` 메서드를 사용한다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/20660/)<br>
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/20661/)

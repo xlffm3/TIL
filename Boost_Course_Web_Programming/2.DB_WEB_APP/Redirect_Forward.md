@@ -3,7 +3,8 @@ Redirect & Forward
 
 ---
 
-### Redirect<br>
+Redirect
+--------
 
 ![image](https://user-images.githubusercontent.com/56240505/69779270-c39bab80-11ea-11ea-8f71-abb70936bd79.png)<br><br>
 
@@ -14,7 +15,8 @@ Redirect & Forward
 -	Redirect는 HttpServletResponse가 가진 `sendRedirect()` 메소드를 사용한다.<br><br>
 -	Redirect는 서버에게 요청을 2번하기 때문에, 각 요청마다 서로 다른 request, response 객체를 이용한다.<br><br>
 
-### Forward<br>
+Forward
+-------
 
 ![image](https://user-images.githubusercontent.com/56240505/69779332-ffcf0c00-11ea-11ea-802f-6270b399c912.png)<br><br>
 
@@ -25,13 +27,15 @@ Redirect & Forward
 -	서블릿이 일을 일부만 처리한 뒤 일부는 위임하는 것을 Forward라고 하며, 요청이 1번 밖에 일어나지 않는 점에서 Redirect와 차이가 있다.<br><br>
 -	Forward 경로는 반드시 **" / "** 로 시작하며, 같은 웹 어플리케이션에서만 가능하다.<br><br>
 
-### Servlet & JSP 연동<br>
+Servlet & JSP 연동
+------------------
 
 -	Servlet은 자바이기 때문에 IDE 지원 등 프로그램 로직 수행에 있어서 유리하다.<br><br>
 -	JSP는 HTML을 단순히 입력해도 되는 등, 결과 출력에 있어서 유리하다.<br><br>
 -	Servlet에서 프로그램 로직을 수행하고, 그 결과를 JSP로 Forward하여 결과를 출력하는 연동 방법이 있다.<br><br>
 
-### Redirect 참고 코드<br>
+Redirect 참고 코드
+------------------
 
 > redirect01.jsp<br>
 
@@ -64,7 +68,8 @@ redirect된 페이지 입니다.
 
 <br>
 
-### Forward 참고 코드<br>
+Forward 참고 코드
+-----------------
 
 > FrontServlet.java<br>
 
@@ -103,7 +108,8 @@ protected void service(HttpServletRequest request, HttpServletResponse response)
 
 <br>
 
-### Servlet & JSP 연동 참고 코드<br>
+Servlet & JSP 연동 참고 코드
+----------------------------
 
 > LogicServlet.java<br>
 
@@ -153,7 +159,8 @@ ${v1} + ${v2} = ${result} <br><br>
 
 <br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16706/)
 

@@ -3,7 +3,8 @@ Event Delegation
 
 ---
 
-### Event Bubbling & Capturing<br>
+Event Bubbling & Capturing
+--------------------------
 
 ![image](https://user-images.githubusercontent.com/56240505/70501788-698fd400-1b62-11ea-9cea-af53982696c7.png)<br>
 
@@ -22,7 +23,8 @@ ul.addEventListener("click",function(evt) {
 -	`target`은 Event Bubbling의 마지막에 위치한 최하위 요소를 반환하며, 클릭된 요소를 기준으로 사용하는 경우에 사용한다.<br><br>
 -	`currentTarget`은 이벤트가 바인딩 된 요소에 해당하는 요소를 반환한다.<br><br>
 
-### Event Delegation<br>
+Event Delegation
+----------------
 
 ```javascript
 var ul = document.querySelector("ul");
@@ -39,7 +41,8 @@ ul.addEventListener("click",function(evt) {
 -	하위 태그에서 발생해야 할 이벤트를, 상위 부모에게 위임하는 것이다.<br><br>
 -	Event Bubbling을 응용한 개념으로, 하위에 추가 이벤트 등록 없이 효율적으로 이벤트 등록이 가능하다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16760/)
 

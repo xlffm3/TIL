@@ -3,18 +3,16 @@ Layered Architecture Practice
 
 ---
 
-### DBConfig.java<br>
+DBConfig.java
+-------------
 
 ```java
 @Configuration
 @EnableTransactionManagement
 public class DBConfig implements TransactionManagementConfigurer {
     private String driverClassName = "com.mysql.jdbc.Driver";
-
     private String url = "jdbc:mysql://localhost:3306/connectdb?useUnicode=true&characterEncoding=utf8";
-
     private String username = "connectuser";
-
     private String password = "connect123!@#";
 
     @Bean
@@ -41,14 +39,16 @@ public class DBConfig implements TransactionManagementConfigurer {
 
 -	WebMvcContextConfiguration 등 기존에 실습해본 코드는 생략했다.<br><br>
 -	@EnableTransactionManagement은 트랜잭션과 관련된 설정을 자동으로 구현해주지만, 사용자 간의 트랜잭션 처리를 위한 PlatformTransactionManager를 구현하기 위해서는 TransactionManagementConfigurer를 별도로 구현해야 한다.<br><br>
--	오버라이딩한 `annotationDrivenTransactionManager` 메서드가 PlatformTransactionManager 객체를 반환한다.<br><br>
+-	오버라이딩한 `annotationDrivenTransactionManager()` 메서드가 PlatformTransactionManager 객체를 반환한다.<br><br>
 
-### web.xml<br>
+web.xml
+-------
 
 -	프레젠테이션 레이어 부분은 DispatcherServlet이, 그 외의 부분은 ContextLoadedListener가 처리하도록 config 경로를 각각 WebMvcContextConfiguration와 ApplicationConfig로 설정한다.<br><br>
 -	filter의 경우, 문자 인코딩에 관련된 내용으로 url-pattern에 대해 필터 적용 범위를 전부(/*)로 지정할 수 있다.<br><br>
 
-### LogDao.java<br>
+LogDao.java
+-----------
 
 ```java
 @Repository
@@ -73,7 +73,8 @@ public class LogDao {
 -	usingGeneratedKeyColumns : ID가 자동으로 입력되게끔 사용한다.<br><br>
 -	insertAction.executeAndReturnKey : insert 명령을 내부적으로 생성해서 실행하고 자동으로 생성된 id 값을 리턴한다.<br><br>
 
-### GuestbookDaoSqls.java<br>
+GuestbookDaoSqls.java
+---------------------
 
 ```java
 public static final String SELECT_PAGING = "SELECT id, name, content, regdate FROM guestbook ORDER BY id DESC limit :start, :limit";
@@ -83,7 +84,8 @@ public static final String SELECT_COUNT = "SELECT count(*) FROM guestbook";
 
 -	query문 중 `limit`는 시작 값, 끝날 때의 값을 설정해서 특정 부분만 select할 수 있다.<br><br>
 
-### GuestbookService.java<br>
+GuestbookService.java
+---------------------
 
 ```java
 public interface GuestbookService {
@@ -97,7 +99,8 @@ public interface GuestbookService {
 
 -	서비스의 비즈니스 로직에 대해 인터페이스를 작성한다.<br><br>
 
-### GuestbookServiceImpl.java<br>
+GuestbookServiceImpl.java
+-------------------------
 
 ```java
 @Service
@@ -160,7 +163,8 @@ public class GuestbookServiceImpl implements GuestbookService{
 -	readOnly가 아닐 경우 명시적으로 false를 표기한다.<br><br>
 -	Transactional이 명시된 경우, 메서드 수행 중 예외가 발생했을 때 Rollback이 일어나는 원자성을 확인할 수 있다.<br><br>
 
-### GuestbookController.java<br>
+GuestbookController.java
+------------------------
 
 ```java
 @Controller
@@ -204,7 +208,8 @@ public class GuestbookController {
 
 <br>
 
-### list.jsp<br><br>
+list.jsp
+--------
 
 ```html
 <body>
@@ -240,7 +245,8 @@ ${guestbook.regdate }<br>
 
 -	Controller와 JSP를 연동시키면 간단한 페이징 작업이 완료된다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16772/)
 

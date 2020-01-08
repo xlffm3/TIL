@@ -3,13 +3,15 @@ HTML Templating
 
 ---
 
-### HTML Templating<br>
+HTML Templating
+---------------
 
 ![image](https://user-images.githubusercontent.com/56240505/70503744-7236d900-1b67-11ea-8a58-7ff2f924e7a6.png)<br><br>
 
 -	반복적인 HTML 부분을 template로 제작한 뒤, 서버에서 온 JSON 데이터를 결합하여 화면에 추가하는 작업이다.<br><br>
 
-### 참고 코드<br>
+참고 코드
+---------
 
 ```javascript
 var data = {  title : "hello",
@@ -25,7 +27,8 @@ var resultHtml = html.replace("{title}", data.title)
 
 <br>
 
-### HTML Template의 보관<br>
+HTML Template의 보관
+--------------------
 
 ```javascript
 //HTML
@@ -43,7 +46,8 @@ var html = document.querySelector("template-list-item");
 -	HTML 코드 안에 숨겨둔다. <br><br>
 -	예제 코드의 경우, HTML 중 script 태그는 type이 javascript가 아니면 렌더링을 하지 않고 무시하기 때문에 이를 이용한다.<br><br>
 
-### 참고 코드<br>
+참고 코드
+---------
 
 ```javascript
 var data = [
@@ -67,7 +71,8 @@ document.querySelector(".content").innerHTML = resultHTML;
 
 <br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/20732/)
 

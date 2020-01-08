@@ -3,12 +3,14 @@ Event
 
 ---
 
-### Event<br>
+Event
+-----
 
 -	브라우저가 클릭 및 스크롤 등 이벤트를 발생시킬 때 특정 작업을 지시할 수 있다.<br><br>
 -	HTML Element를 찾아 특정 이벤트에 특정 작업을 수행하도록 등록시킬 수 있다.<br><br>
 
-### addEventListener()<br>
+addEventListener()
+------------------
 
 ```javascript
 var el = document.getElementById("outside");
@@ -25,7 +27,8 @@ el.addEventListener("click", function(evt){
 -	`evt.target`은 이벤트가 발생한 element로서 객체이다.<br><br>
 -	이벤트 리스너 안에서 이벤트 객체를 활용하여 nodeName, classname같은 속성이 사용 가능하다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16760/)
 

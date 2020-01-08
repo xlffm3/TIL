@@ -3,7 +3,8 @@ Form Data
 
 ---
 
-### Form Tag<br>
+Form Tag
+--------
 
 ```html
 <form action="/join" method="post">
@@ -26,7 +27,8 @@ Form Data
 -	HTTPS가 아닌 경우, 전송되는 데이터가 노출될 수 있다.<br><br>
 -	form 데이터를 ajax로 처리할 수 있다.<br><br>
 
-### 유효성 검증<br>
+유효성 검증
+-----------
 
 ```javascript
 <script>
@@ -52,7 +54,8 @@ btn.addEventListener("click", function(evt) {
 -	`nameElememnt.addEventListener("change", function(evt) {...});` <br><br>
 -	form의 input data 값이 변경되면 발생하는 이벤트 타입인 change를 통해 더 빨리 form의 유효성 테스트가 가능하다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16796/)
 

@@ -3,7 +3,8 @@ Browser
 
 ---
 
-### Browser<br>
+Browser
+-------
 
 -	월드와이드웹(WWW)에서 정보를 탐색하고 표현하기 위한 소프트웨어이다.<br><br>
 -	특정 정보로 이동할 수 있는 주소 입력창 및 서버와 HTTP로 정보를 주고 받을 수 있는 네트워크 모듈을 포함한다.<br><br>
@@ -12,7 +13,8 @@ Browser
 -	HTML Parsing 내용이 확인되기 전에 JS 등의 내용이 있다면, 흐름을 방해할 수 있다.<br><br>
 -	따라서 CSS는 head 영역 안, JS는 body tag의 하단에 위치하는게 일반적이다.<br><br>
 
-### Browser의 작동 방식<br>
+Browser의 작동 방식
+-------------------
 
 ![browser1](https://user-images.githubusercontent.com/56240505/69651200-12dec080-10b3-11ea-9c16-03309f84d114.png)<br><br>
 
@@ -22,7 +24,8 @@ Browser
 -	Painting 과정을 통해 화면에 정보가 표현이 된다.<br><br>
 -	브라우저는 변경에 대해 가능한 최소한의 동작으로 반응하기 때문에, 화면의 변화에 대해 항상 새로운 Rendering 작업을 수행하는 것은 아니다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16663/)
 

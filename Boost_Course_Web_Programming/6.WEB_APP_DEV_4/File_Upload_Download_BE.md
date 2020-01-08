@@ -3,16 +3,18 @@ File Upload & Download : Back-End
 
 ---
 
-### Multipart<br>
+Multipart
+---------
 
 ![image](https://user-images.githubusercontent.com/56240505/71478449-193b9600-2833-11ea-8fb4-e21955ed4314.png)<br><br>
 
--	웹 클라이언트가 요청을 보낼 때 HTTP프로토콜의 바디 부분에 데이터를 여러 부분으로 나눠서 보내는 것이며, 주로 파일 전송에 사용된다.<br><br>
--	HttpServletRequest는 웹 클라이언트가 전달하는 Multipart데이터를 쉽게 처리하는 메소드를 제공하지 않는다.<br><br>
+-	웹 클라이언트가 요청을 보낼 때 HTTP 프로토콜의 바디 부분에 데이터를 여러 부분으로 나눠서 보내는 것이며, 주로 파일 전송에 사용된다.<br><br>
+-	HttpServletRequest는 웹 클라이언트가 전달하는 Multipart 데이터를 쉽게 처리하는 메소드를 제공하지 않는다.<br><br>
 -	서블릿에서 파일 업로드를 처리하려면 별도의 라이브러리를 사용해야 한다.<br><br>
 -	대표적인 라이브러리가 아파치 재단의 commons-fileupload이다.<br><br>
 
-### Spring MVC 설정<br>
+Spring MVC 설정
+---------------
 
 > commons-fileupload, commons-io 라이브러리 추가
 
@@ -36,15 +38,17 @@ File Upload & Download : Back-End
 ```java
 @Bean
 public MultipartResolver multipartResolver() {
-org.springframework.web.multipart.commons.CommonsMultipartResolver multipartResolver = new org.springframework.web.multipart.commons.CommonsMultipartResolver();
-multipartResolver.setMaxUploadSize(10485760); // 1024 * 1024 * 10
-return multipartResolver;
+  org.springframework.web.multipart.commons.CommonsMultipartResolver multipartResolver
+    = new org.springframework.web.multipart.commons.CommonsMultipartResolver();
+  multipartResolver.setMaxUploadSize(10485760); // 1024 * 1024 * 10
+  return multipartResolver;
 }
 ```
 
 -	DispathcerServlet은 준비 과정에서 "multipart/form-data"가 요청으로 올 경우 MultipartResolver를 사용한다.<br><br>
 
-### Upload 처리<br>
+Upload 처리
+-----------
 
 -	파일 업로드 시에는 form태그에 enctype설정이 되어 있어야 하며, post 방식이어야 한다.<br><br>
 
@@ -56,7 +60,8 @@ return multipartResolver;
 
 -	MultipartFile의 메소드를 이용해서 파일 이름, 파일 크기 등을 구하고 InputStream을 얻어 파일을 서버에 저장한다.<br><br>
 
-### Download 처리<br>
+Download 처리
+-------------
 
 ```java
 response.setHeader("Content-Disposition", "attachment; filename=\"" + fileName + "\";");
@@ -71,7 +76,8 @@ response.setHeader("Expires", "-1;");
 -	파일 다운로드와 관련된 헤더 정보 및 캐시 미사용 등 설정을 추가한다.<br><br>
 -	파일을 읽어 HttpServletResponse의 OutputStream으로 출력한다.<br><br>
 
-### Upload Practice<br>
+Upload Practice
+---------------
 
 ```java
 @PostMapping("/upload")
@@ -103,7 +109,8 @@ public String upload(@RequestParam("file") MultipartFile file) {
 -	파일명 중복 및 한 디렉토리에 저장될 수 있는 파일의 수 제한 등 문제가 발생할 수 있다.<br><br>
 -	파일이 업로드 되는 날짜 등을 이용하여 파일명과 디렉토리 구조를 적절히 변경하여 이를 극복한다.<br><br>
 
-### Download Practice<br>
+Download Practice
+-----------------
 
 ```java
 @GetMapping("/download")
@@ -139,7 +146,8 @@ public void download(HttpServletResponse response) {
 
 -	입출력(IO) 메서드를 통해 file을 읽거나 쓴다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16816/)
 

@@ -3,12 +3,14 @@ RestController
 
 ---
 
-### @RestController<br>
+@RestController
+---------------
 
 -	Spring 4 version에서 Rest API 또는 Web API 개발을 위해 등장한 Annotation이다.<br><br>
 -	이전 버전의 @Controller와 @ResponseBody를 포함한다.<br><br>
 
-### MessageConvertor<br>
+MessageConvertor
+----------------
 
 -	자바 객체와 HTTP 요청 / 응답 바디를 변환하는 역할이다.<br><br>
 -	외부에서 전달받은 JSON 메서드를 내부에서 사용할 수 있는 객체로 변환하거나, 컨트롤러를 리턴한 객체가 클라이언트에게 JSON으로 변환해서 전달하는 역할 등이 그 예다.<br><br>
@@ -18,18 +20,21 @@ RestController
 -	Default MessageConvertor 를 제공한다.<br><br>
 -	링크 바로가기의 `addDefaultHttpMessageConverters` 메소드 항목을 참고한다.<br><br>
 
-### MessageConvertor 종류<br>
+MessageConvertor 종류
+---------------------
 
 ![image](https://user-images.githubusercontent.com/56240505/70691659-f1a9e100-1cfc-11ea-9f26-0f9e8d62c868.png)<br><br>
 
-### JSON 응답하기<br>
+JSON 응답하기
+-------------
 
 -	컨트롤러의 메소드에서는 JSON으로 변환될 객체를 반환한다.<br><br>
 -	jackson라이브러리를 추가할 경우 객체를 JSON으로 변환하는 메시지 컨버터가 사용되도록 @EnableWebMvc에서 기본으로 설정되어 있다.<br><br>
 -	jackson라이브러리를 추가하지 않으면 JSON메시지로 변환할 수 없어 500오류가 발생한다.<br><br>
 -	사용자가 임의의 메시지 컨버터(MessageConverter)를 사용하도록 하려면 WebMvcConfigurerAdapter의 configureMessageConverters메소드를 오버라이딩 한다.<br><br>
 
-### Practice<br>
+Practice
+--------
 
 ```java
 @RestController
@@ -87,7 +92,8 @@ public class GuestbookApiController {
 -	PostMapping 메서드 역시 클라이언트에 응답이 갈 때는 json 메서드로 변환된다.<br><br>
 -	Chrome의 Restlet Client 플러그인으로 테스트를 할 수 있다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16773/)
 

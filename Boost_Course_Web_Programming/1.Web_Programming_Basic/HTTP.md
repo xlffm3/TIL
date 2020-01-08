@@ -3,22 +3,26 @@ HTTP
 
 ---
 
-### Internet<br>
+Internet
+--------
 
 -	TCP/IP 기반의 네트워크가 전세계적으로 확대되어 하나로 연결된 네트워크들의 네트워크 결합체이다.<br><br>
 -	하나의 물리적인 컴퓨터에는 여러 개의 서버가 동작할 수 있으며, 각각의 서버들은 포트 값으로 구분되어져 동작한다.<br><br>
 
-### HTTP(Hypertext Transfer Protocol)<br>
+HTTP(Hypertext Transfer Protocol)
+---------------------------------
 
 -	서버와 클라이언트가 인터넷 상에서 데이터를 주고 받기 위한 통신규약이다.<br><br>
 -	HTTPS는 Secure 모드로서, HTTP의 취약점을 보완하기 위한 보안이 강화된 프로토콜이다.<br><br>
 
-### URL(Uniform Resource Locator)<br>
+URL(Uniform Resource Locator)
+-----------------------------
 
 -	인터넷 상의 자원의 위치를 의미한다.<br><br>
 -	특정 웹 서버의 특정 파일에 접근하기 위한 경로 혹은 주소이다.<br><br>
 
-### HTTP의 작동 방식<br>
+HTTP의 작동 방식
+----------------
 
 ![httpimage](https://user-images.githubusercontent.com/56240505/69651201-13775700-10b3-11ea-919f-f7c23bf730e8.png)<br><br>
 
@@ -45,7 +49,8 @@ HTTP
 
 -	HTTP 프로토콜 버전 : 웹 브라우저가 사용하는 프로토콜 버전이다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16661/)
 

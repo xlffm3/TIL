@@ -3,11 +3,13 @@ Handlebar
 
 ---
 
-### Handlebar<br>
+Handlebar
+---------
 
 -	templating을 처리하는 라이브러리로서, tagged template literals와 pre-complie에 대해 더 공부해보자.<br><br>
 
-### 기본적인 사용 방법<br>
+기본적인 사용 방법
+------------------
 
 ```javascript
 <script type="myTemplate" id="listTemplate">
@@ -38,7 +40,8 @@ bindTemplate(data);
 
 <br>
 
-### 배열이 포함된 데이터 처리<br>
+배열이 포함된 데이터 처리
+-------------------------
 
 ```javascript
 <script type="myTemplate" id="listTemplate">
@@ -68,7 +71,8 @@ var data = {
 
 <br>
 
-### data 자체가 많아진 경우의 처리<br>
+data 자체가 많아진 경우의 처리
+------------------------------
 
 ```javascript
 var innerHtml = "";
@@ -84,7 +88,8 @@ var innerHtml = data.reduce(function(prve, next) {
 
 <br>
 
-### 조건 상황에 따른 처리<br>
+조건 상황에 따른 처리
+---------------------
 
 ```javascript
 <script type="myTemplate" id="listTemplate">
@@ -108,7 +113,8 @@ var innerHtml = data.reduce(function(prve, next) {
 
 <br>
 
-### Help function<br>
+Helper function
+---------------
 
 ```javascript
 <script type="myTemplate" id="listTemplate">
@@ -148,7 +154,8 @@ Handlebars.registerHelper("likes", function (like) {
 
 <br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16784/)
 

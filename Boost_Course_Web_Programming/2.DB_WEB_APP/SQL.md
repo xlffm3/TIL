@@ -3,7 +3,8 @@ SQL
 
 ---
 
-### SQL(Structured Query Language)<br>
+SQL(Structured Query Language)
+------------------------------
 
 -	SQL은 데이터를 보다 쉽게 검색, 추가, 삭제, 수정 등 조작을 하도록 고안된 언어이다.<br><br>
 -	관계형 DB에서 데이터를 조작하고 쿼리하는 표준 수단이다.<br><br>
@@ -15,7 +16,8 @@ SQL
 	-	GRANT, REVOKE, COMMIT, ROLLBACK 등.<br><br>
 -	예전에 SQLD 자격증 취득하면서 배웠던 내용이라 크게 어렵지는 않으니, 실습 때 마다 reference 사이트를 자주 참고하며 익히려고 노력하자.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16720/)
 

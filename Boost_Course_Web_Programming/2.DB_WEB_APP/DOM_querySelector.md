@@ -3,7 +3,8 @@ DOM & querySelector
 
 ---
 
-### DOM & querySelector<br>
+DOM & querySelector
+-------------------
 
 ![image](https://user-images.githubusercontent.com/56240505/71048569-fb12cd80-2182-11ea-91b5-a9bea298b522.png)<br><br>
 
@@ -24,7 +25,8 @@ DOM & querySelector
 
 	<br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16699/)
 

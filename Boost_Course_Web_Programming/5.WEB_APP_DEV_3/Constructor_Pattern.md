@@ -3,7 +3,8 @@ Constructor Pattern
 
 ---
 
-### Object Literal<br>
+Object Literal
+--------------
 
 ```javascript
 var healthObj = {
@@ -19,7 +20,8 @@ healthObj.showHealth();
 
 -	healthObj 형태를 가진 여러 개의 객체가 필요하다면, 위와 같은 방식은 코드 중복으로 유지 보수 및 메모리 관리 측면에서 효율적이지 않다.<br><br>
 
-### Constructor<br>
+Constructor
+-----------
 
 ```javascript
 function Health(name, lastTime) {
@@ -31,11 +33,12 @@ const h = new Health("달리기", "10:12");
 const h2 = new Health("걷기", "20:11");
 ```
 
--	`typeof` 를 사용하면, h와 h2가 object임을 확인할 수 있다.<br><br>
+-	`typeof()` 를 사용하면, h와 h2가 object임을 확인할 수 있다.<br><br>
 -	`new` 키워드는 객체를 생성하는 함수로서, 생성자라고 한다.<br><br>
--	그러나 `showHealth` 메서드가 중복되어 메모리 비효율을 유발하고 있다.<br><br>
+-	그러나 `showHealth()` 메서드가 중복되어 메모리 비효율을 유발하고 있다.<br><br>
 
-### Prototype을 활용한 메서드 생성<br>
+Prototype을 활용한 메서드 생성
+------------------------------
 
 ![image](https://user-images.githubusercontent.com/56240505/71458880-5169b700-27e8-11ea-8b72-26112b9eb772.png)<br>
 
@@ -78,7 +81,8 @@ console.log(h.showHealth === h2.showHealth); //true
 
 -	`Object.create` 를 사용하여 Class와 같은 코드를 만들 수 있다.<br><br>
 
-### Tab UI 실습<br>
+Tab UI 실습
+-----------
 
 ```javascript
 function Tab(tabElement) {
@@ -122,7 +126,8 @@ var o = new Tab(tabmenu);
 -	prototype 기반 코드는 하나의 클래스(모듈)로 만드는 것이며, ES6에서 Class와 extend 개념으로도 만들 수 있다.<br><br>
 -	Object Literal 안에서는 Arrow Function을 가급적 지양한다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16794/)
 

@@ -3,14 +3,16 @@ Ajax
 
 ---
 
-### Ajax(Asynchronous JavaScript and XML)<br>
+Ajax(Asynchronous JavaScript and XML)
+-------------------------------------
 
 -	JavaScript와 XML을 이용한 비동기적 정보 교환 기법이다.<br><br>
 -	웹에 데이터를 갱신할 때, 브라우저 새로고침 없이 서버로부터 데이터를 받아 변경된 부분만 수정해서 표한한다.<br><br>
 -	필요한 시점에 동적으로 콘텐츠를 받아 표현하는데 활용한다.<br><br>
 -	**XML(eXtensible Markup Language)** : 다른 특수한 목적을 갖는 마크업 언어를 만드는데 사용하도록 권장하는 다목적 마크업 언어이다.<br><br>
 
-### Ajax의 작동 방식<br>
+Ajax의 작동 방식
+----------------
 
 -	1. 브라우저가 사이트에 접속하면 서버는 사이트의 기본 얼개를 담은 '템플릿'을 전달한다.<br><br>
 -	2. 브라우저는 수신받은 템플릿 HTML과 CSS를 해석해 화면의 기본 모양을 그린다.<br><br>
@@ -19,7 +21,8 @@ Ajax
 -	5. 서버는 순수 데이터를 응답으로 되돌려준다.<br><br>
 -	6. 브라우저는 수신한 데이터를 해석하여 템플릿의 적절한 위치에 삽입한다. 데이터의 가공 방식에 따라 삽입 외의 작업(변경, 삭제)을 할 수도 있다.<br><br>
 
-### Ajax 실행 코드<br>
+Ajax 실행 코드
+--------------
 
 ```javascript
 function ajax(data) {
@@ -38,13 +41,15 @@ function ajax(data) {
 -	이는 `setTimeout()` 콜백 함수의 실행과 유사하게 동작하는 '비동기' 로직이다.<br><br>
 -	GET 방식 외 POST 방식도 있다.<br><br>
 
-### Ajax 응답 처리<br>
+Ajax 응답 처리
+--------------
 
 -	서버로부터 받아온 JSON 데이터는 문자열 형태이기때문에 브라우저에서 바로 실행이 불가능하다.<br><br>
 -	문자열을 일일이 파싱하는 불편함을 감수하는 대신, JSON 객체를 통해 Js 객체로 사용이 가능하다.<br><br>
 -	`var obj = JSON.parse("this.responseText");`<br><br>
 
-### JSON(JavaScript Object Notation)<br>
+JSON(JavaScript Object Notation)
+--------------------------------
 
 ```javascript
 {
@@ -72,7 +77,8 @@ function ajax(data) {
 -	Ajax 통신에서 자주 쓰이는 포맷이다.<br><br>
 -	객체 표기 기법이라 웹 브라우저 레벨에서 쉽게 해석이 가능하며, XML보다 용량이 적고 편하다.<br><br>
 
-### CORS(Cross Origin Resource Sharing)<br>
+CORS(Cross Origin Resource Sharing)
+-----------------------------------
 
 -	교차 출처 리소스 공유로서, Cross-Site Http Requset를 가능하게 하는 표준 규약이다.<br><br>
 -	다른 도메인으로부터 리소스가 필요할 경우, Cross-Site Http Request가 필요하다.<br><br>
@@ -81,7 +87,7 @@ function ajax(data) {
 -	지속적으로 웹 어플리케이션을 개선하고 쉽게 개발하기 위해, XMLHttpRequest가 Cross-Domain을 요청할 수 있는 방법이 필요했으며 CORS가 개발되었다.<br><br>
 -	BE 코드에서 헤더 설정을 통해 CORS를 사용하며, 이 외에도 비표준이지만 사실상 표준으로 사용하는 JSONP를 통해 CROSS DOMAIN 문제를 해결한다.<br><br>
 
-###Reference<br>
+##Reference
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16701/)<br>
 -	[Using XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest)<br>

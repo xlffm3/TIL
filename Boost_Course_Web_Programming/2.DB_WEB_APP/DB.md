@@ -3,13 +3,15 @@ DB
 
 ---
 
-### Database<br>
+Database
+--------
 
 -	데이터의 집합(a Set of Data)이다.<br><br>
 -	여러 응용 시스템(프로그램)들의 통합된 정보들을 저장하여 운영할 수 있는 공용(share) 데이터의 집합이다.<br><br>
 -	효율적으로 저장, 검색, 갱신할 수 있도록 데이터 집합들끼리 연관시키고 조직화되어야 한다.<br><br>
 
-### Database 특성<br>
+Database 특성
+-------------
 
 -	실시간 접근성(Real-time Accessability).
 	-	사용자의 요구를 즉시 처리할 수 있다.<br><br>
@@ -20,7 +22,8 @@ DB
 -	내용 참조(Content Reference).
 	-	저장한 데이터 레코드의 위치나 주소가 아닌 사용자가 요구하는 데이터의 내용, 즉 데이터 값에 따라 참조할 수 있어야 한다.<br><br>
 
-### DBMS(Database Management System)<br>
+DBMS(Database Management System)
+--------------------------------
 
 -	데이터베이스를 관리하는 소프트웨어이다.<br><br>
 -	여러 응용 소프트웨어(프로그램) 또는 시스템이 동시에 데이터베이스에 접근하여 사용할 수 있게 한다.<br><br>
@@ -30,7 +33,8 @@ DB
 	-	제어기능 : 데이터베이스의 내용 정확성과 안전성을 유지하도록 제어하는 기능.<br><br>
 -	데이터의 일관성 및 무결성과 보안 및 중복 제거를 실현할 수 있다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16716/)
 

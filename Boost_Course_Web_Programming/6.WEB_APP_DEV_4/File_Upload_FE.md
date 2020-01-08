@@ -3,7 +3,8 @@ File Upload : Front-End
 
 ---
 
-### File Upload<br>
+File Upload
+-----------
 
 ```html
 <div class="formWrap">
@@ -29,7 +30,8 @@ File Upload : Front-End
 -	일반적인 form 데이터를 전송 시에 HTTP Header에는 기본적으로, 'application/x-www-form-urlencoded' 라는 정보로 노출된다.<br><br>
 -	그러나 file의 경우, form tag의 속성으로 enctype를 multipart/form-data로 지정해야 한다.<br><br>
 
-### DevTools : Network<br>
+DevTools : Network
+------------------
 
 ```javascript
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7rKYKhIWaTrjvGi1
@@ -50,11 +52,12 @@ Content-Type: image/png
 ------WebKitFormBoundaryiUIOhJXAwxorM25j--
 ```
 
--	WebKitFormBoundaryiUIOhJXAwxorM25j 라는 어떤 구분정보를 기준으로 데이터가 노출되고 있다.<br><br>
+-	WebKitFormBoundaryiUIOhJXAwxorM25j 라는 어떤 구분 정보를 기준으로 데이터가 노출되고 있다.<br><br>
 -	파일을 보낼 때는, 보통 다른 데이터와 별도로 먼저 보내는 경우도 많다.<br><br>
 -	Ajax로 구현할 때, jQuery와 ***[FormData](https://developer.mozilla.org/en-US/docs/Web/API/FormData/Using_FormData_Objects#Sending_files_using_a_FormData_object)*** 속성을 이용하면 좀 더 쉽게 구현이 가능하다.<br><br>
 
-### 확장자 유효성 검사<br>
+확장자 유효성 검사
+------------------
 
 > accept 속성 사용<br>
 
@@ -86,7 +89,8 @@ function valideImageType(image) {
 
 -	file을 업로드 하면, change 이벤트를 통해서 이를 감지하고 file 객체를 얻을 수 있다.<br><br>
 
-### 썸네일 노출<br>
+썸네일 노출
+-----------
 
 ```javascript
 const elImage = document.querySelector("#reviewImageFileOpenInput");
@@ -105,7 +109,8 @@ elImage.addEventListener("change", (evt) => {
 -	Ajax로 img 파일을 서버로 전달한 뒤, img url 등 응답 정보를 받아 화면에 노출 시키는 것이 일반적인 과정이다.<br><br>
 -	file 객체를 넣으면 file에 접근할 수 있는 url을 제공해주는 `createObjectURL()` 메서드로 쉽게 구현이 가능하다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16811/)
 

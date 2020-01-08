@@ -3,7 +3,8 @@ Web API
 
 ---
 
-### Web API<br>
+Web API
+-------
 
 -	URL은 정보의 자원을 표현해야 하며, 이를 HTTP Method로 표현한다.<br><br>
 -	HTTP Method<br>
@@ -17,7 +18,8 @@ Web API
 
 <br>
 
-### 세부 규칙<br>
+세부 규칙
+---------
 
 -	`GET /members` , `DELETE/members/1` 처럼 HTTP Method로만 자원에 대한 행위를 표현한다.<br><br>
 -	나쁜 예 : `GET /members/delete/1` <br><br>
@@ -27,7 +29,8 @@ Web API
 -	Accept Header를 사용한다.<br><br>
 -	200번대 상태 코드는 성공이며, 300, 400, 500 번대는 오류이니 reference를 참조하라.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/20654/)
 

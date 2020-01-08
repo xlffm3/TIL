@@ -3,13 +3,15 @@ SLF4J
 
 ---
 
-### SLF4J<br>
+SLF4J
+-----
 
 -	logging 관련 라이브러리는 다양하며, SLF4J는 이러한 라이브러리들을 하나의 통일된 방식으로 사용할 수 있는 방법을 제공한다.<br><br>
 -	SLF4J는 로깅 Facade이다.<br><br>
 -	로깅에 대한 추상 레이어를 제공하는 것이고 interface의 모음이다.<br><br>
 
-### Maven SLF4J & logback dependency 추가<br>
+Maven SLF4J & logback dependency 추가<br>
+-----------------------------------------
 
 ![image](https://user-images.githubusercontent.com/56240505/71477805-61f15000-282f-11ea-832e-1b83f6b641f8.png)<br><br>
 
@@ -17,11 +19,13 @@ SLF4J
 -	Spring라이브러리에서 commons-logging을 제거하면, Spring을 사용할 때 commons-logging 라이브러리를 찾으면서 오류가 발생한다.<br><br>
 -	이러한 오류를 제거하기 위해서 jcl-over-slf4j를 추가한다.<br><br>
 
-### logback 설정<br>
+logback 설정
+------------
 
 ![image](https://user-images.githubusercontent.com/56240505/71477837-97963900-282f-11ea-983d-ba8f58b257ba.png)<br><br>
 
-### Appender<br>
+Appender
+--------
 
 > ConsoleAppender<br>
 
@@ -53,7 +57,8 @@ SLF4J
 -	ConsoleAppender와 FileAppender는 각각 콘솔과 로그에 어떤 포맷으로 로그를 출력할지 결정한다.<br><br>
 -	RollingFileAppender는 로그의 양이 많아 하나의 파일로 관리하기 어려울 경우, 하루 단위로 로그를 관리하고자 할 경우 사용된다.<br><br>
 
-### Log Level<br>
+Log Level
+---------
 
 ```xml
 <logger name="org.springframework" level="info"/>
@@ -70,7 +75,8 @@ SLF4J
 -	4. warn : 오류는 아니지만 잠재적인 오류 원인이 될 수 있는 경고성 정보이다.<br><br>
 -	5. error : 요청을 처리하는 중 문제가 발생한 오류 정보이다.<br><br>
 
-### Logger 객체 선언 및 로그 출력<br>
+Logger 객체 선언 및 로그 출력
+-----------------------------
 
 ```java
 import org.slf4j.Logger;
@@ -90,7 +96,8 @@ logger.error("{} {} 출력", "값1", "값2");
 -	로그로 남길 변수의 수만큼 {} 를 이용한다.<br><br>
 -	로그의 수준에 따라 debug(), info(), warn(), error()메소드를 이용한다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16814/)
 

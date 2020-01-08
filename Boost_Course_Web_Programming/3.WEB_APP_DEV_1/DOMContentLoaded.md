@@ -3,7 +3,8 @@ DOMContentLoaded
 
 ---
 
-### DOMContentLoaded<br>
+DOMContentLoaded
+----------------
 
 ```html
 <div>a</div><script>document.querySelector("div")</script> //정상
@@ -16,7 +17,8 @@ DOMContentLoaded
 -	DOM Tree가 완성되면 DOM APIs를 통해서 DOM에 접근할 수 있기 때문에, 실무에서 대부분의 Js 코드는 DOMContentLoaded 이후에 동작한다.<br><br>
 -	HTML 중간중간에 script를 추가해도 되지만, 순서에 유념해야 한다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/20141/)
 

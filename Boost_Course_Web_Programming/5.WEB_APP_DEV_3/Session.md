@@ -3,7 +3,8 @@ Session
 
 ---
 
-### Session<br>
+Session
+-------
 
 -	클라이언트 별로 서버에 저장되는 정보이다.<br><br>
 -	웹 클라이언트가 서버측에 요청을 보내게 되면 서버는 클라이언트를 식별하는 session id를 생성한다.<br><br>
@@ -12,7 +13,8 @@ Session
 -	클라이언트는 서버측에 요청을 보낼때 session id를 가지고 있는 쿠키를 전송한다.<br><br>
 -	서버는 쿠키에 있는 session id를 이용해서 그 전 요청에서 생성한 HttpSession을 찾고 사용한다.<br><br>
 
-### javax.servlet.http.Cookie<br>
+javax.servlet.http.Cookie
+-------------------------
 
 ![image](https://user-images.githubusercontent.com/56240505/71468653-0eb8d680-280a-11ea-9849-a1fe14a1be7b.png) ![image](https://user-images.githubusercontent.com/56240505/71468655-11b3c700-280a-11ea-9da7-4e1ec9050b8d.png)<br>
 
@@ -27,7 +29,8 @@ Session
 -	세션의 유지 시간이란 서버에 접속한 후 서버에 요청을 하지 않는 최대 시간이다.<br><br>
 -	30분 이상 서버에 전혀 반응을 보이지 않으면 세션이 자동으로 끊어지며, 세션 유지 시간은 web.xml파일에서 설정 가능하다.<br><br>
 
-### Session 생성<br>
+Session 생성
+------------
 
 ```java
 HttpSession session = request.getSession();
@@ -37,9 +40,10 @@ HttpSession session = request.getSession(false);
 
 -	request의 `getSession()` 메소드는 서버에 생성된 세션이 있다면 세션을 반환하고 없다면 새롭게 세션을 생성하여 반환한다.<br><br>
 -	새롭게 생성된 세션 인자는 HttpSession이 가지고 있는 `isNew()` 메소드를 통해 알 수 있다.<br><br>
--	파라미터로 false를 전달하면, 이미 생성된 세션이 있다면 반환하고 없으면 null을 반환한다.<br><br>
+-	파라미터로 false를 전달시, 이미 생성된 세션이 있다면 반환하고 없으면 null을 반환한다.<br><br>
 
-### Session 값 저장 및 조회<br>
+Session 값 저장 및 조회
+-----------------------
 
 ```java
 session.setAttribute(String name, Object value)
@@ -49,7 +53,8 @@ String value = (String) session.getAttribute("id");
 -	반환 값은 Object 유형이므로 저장된 객체로 형 변환이 필요하다.<br><br>
 -	기초 실습 내용은 Cookie와 유사하여 생략한다.<br><br>
 
-### Spring MVC에서의 Session 사용<br>
+Spring MVC에서의 Session 사용
+-----------------------------
 
 > @SessionAttributes & @ModelAttribute<br>
 
@@ -58,7 +63,7 @@ String value = (String) session.getAttribute("id");
 public class LoginController {
   @ModelAttribute("user")
   public User setUpUserForm() {
-  return new User();
+    return new User();
   }
 }
 ```
@@ -113,7 +118,8 @@ public class UserController {
 -	SessionStatus 는 컨트롤러 메소드의 파라미터로 사용할 수 있는 스프링 내장 타입이다.<br><br>
 -	이 오브젝트를 이용하면 현재 컨트롤러의 @SessionAttributes에 의해 저장된 오브젝트를 제거할 수 있다.<br><br>
 
-### Spring MVC - form tag 라이브러리<br>
+Spring MVC - form tag 라이브러리
+--------------------------------
 
 ```html
 <form:form action="login" method="post" modelAttribute="user">
@@ -125,7 +131,8 @@ Password : <form:password path="password" /><br>
 
 -	modelAttribute속성으로 지정된 이름의 객체를 세션에서 읽어와서 form태그로 설정된 태그에 값을 설정한다.<br><br>
 
-### Spring MVC에서의 Session Practice<br>
+Spring MVC에서의 Session Practice
+---------------------------------
 
 > GuestbookAdminController.java
 
@@ -176,13 +183,14 @@ public String delete(@RequestParam(name="id", required=true) Long id,
   }
   String clientIp = request.getRemoteAddr();
   guestbookService.deleteGuestbook(id, clientIp);
-  return "redirect:list";		
+  return "redirect:list";       
 }
 ```
 
 <br>
 
-### Reference<br>
+Reference
+---------
 
 -	[edwith](https://www.edwith.org/boostcourse-web/lecture/16801/)
 
