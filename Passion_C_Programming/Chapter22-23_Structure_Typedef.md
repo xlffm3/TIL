@@ -3,7 +3,8 @@ Chapter 22 - 23 : Structure & Typedef
 
 ---
 
-### Structure<br>
+Structure
+---------
 
 ```c
 struct person{
@@ -28,7 +29,8 @@ int main(void){
 -	구조체의 멤버가 배열 혹은 포인터 변수면, 그에 맞는 접근 방식을 취한다.<br><br>
 -	구조체를 선언과 동시에 초기화하면 번거로운 함수를 사용하지 않아도 된다.<br><br>
 
-### 구조체 변수와 포인터<br>
+구조체 변수와 포인터
+--------------------
 
 ```c
 struct point{
@@ -49,7 +51,8 @@ int main(void){
 -	TYPE 형 구조체 변수의 멤버로 TYPE 형 포인터 변수를 둘 수 있다.<br><br>
 -	구조체 변수의 주소 값은 구조체 변수의 첫 번째 멤버의 주소 값과 동일하다.<br><br>
 
-### typedef 선언<br>
+typedef 선언
+------------
 
 ```c
 typedef int INT; //int의 또 다른 이름 INT 부여
@@ -69,12 +72,14 @@ typedef struct {
 -	예제처럼 구조체의 정의와 typedef의 선언을 동시에 수행할 수 있다.<br><br>
 -	예제처럼 구조체의 이름을 생략할 수 있지만, struct 선언이 불가능해진다.<br><br>
 
-### Union Type<br>
+Union Type<br>
+--------------
 
 -	구조체의 크기는 모든 멤버 크기의 합이지만, 공용체의 크기는 가장 크기가 큰 멤버의 크기 1개만 계산된다.<br><br>
 -	공용체의 멤버들이 메모리 공간을 공유하고 있기 때문에, 하나의 메모리 공간을 둘 이상의 다양한 방식으로 접근할 수 있다는 점에서 유용하다.<br><br>
 
-### Enumerated Type<br>
+Enumerated Type
+---------------
 
 ```c
 typedef enum syllable{
@@ -96,7 +101,8 @@ int main(void){
 -	중간마다 값이 선언되어 있지 않으면, 앞서 선언된 상수보다 1이 증가한 값이 할당된다.<br><br>
 -	열거형은 둘 이상의 연관이 있는 이름을 상수로 선언함으로써 프로그램의 가독성을 높이는데 의의가 있다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	열혈 C 프로그래밍 (윤성우 저) Chapter 22 - 23
 

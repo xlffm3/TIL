@@ -3,7 +3,8 @@ Chapter 12 : Pointer
 
 ---
 
-### Pointer<br>
+Pointer
+-------
 
 ```C
 int main(void){
@@ -19,7 +20,8 @@ int main(void){
 -	`pnum`은 포인터 변수의 이름이며, `int *` 는 int형 변수의 주소 값을 저장하는 포인터 변수의 선언이다.<br><br>
 -	포인터 변수의 크기는 시스템이 32비트인지 64비트인지에 따라 크기가 상이하다.<br><br>
 
-### Pointer Variable 선언<br>
+Pointer Variable 선언
+---------------------
 
 ```C
 type * // type형 포인터
@@ -31,7 +33,8 @@ type * ptr; // type 형 포인터 변수 ptr
 -	포인터 변수도 값을 저장하는 변수이기 때문에 포인터 형 역시 자료형의 범주에 포함시키기도 한다.<br><br>
 -	포인터 형이 존재하는 이유는 포인터 기반의 메모리 접근 기준을 마련하기 위함이며, 포인터에 형이 존재하지 않는다면 * 연산을 통한 메모리의 접근이 불가능하다.<br><br>
 
-### Operator &<br>
+Operator &
+----------
 
 ```C
 int main(void){
@@ -44,7 +47,8 @@ int main(void){
 -	`&` 연산자는 피연산자의 주소 값을 반환하는 연산자이며, 상수는 피연산자가 될 수 없다.<br><br>
 -	변수의 자료형에 맞지 않는 포인터 변수의 선언은 컴파일 에러는 발생하지 않지만, 포인터 관련 * 연산 시 문제가 발생한다.<br><br>
 
-### Operator \*<br>
+Operator \*
+-----------
 
 ```C
 int main(void){
@@ -58,7 +62,8 @@ int main(void){
 -	`*` 연산자는 포인터가 가리키는 메모리 공간에 접근할 때 사용하는 연산자이다.<br><br>
 -	*pnum이 의미하는 바는 "포인터 변수 pnum이 가리키는 메모리 공간인 변수 num에 정수 20을 저장하고 출력하라." 이다.<br><br>
 
-### Null Pointer<br>
+Null Pointer
+------------
 
 ```C
 int main(void){
@@ -74,7 +79,8 @@ int main(void){
 -	ptr3 포인터 변수는 잘못된 주소로 초기화가 되었다.<br><br>
 -	ptr1, ptr2 처럼 0 혹은 NULL을 통해 아무데도 가리키지 않는다는 명시를 해야 하며, NULL 키워드는 상수 0으로 정의되어 있다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	열혈 C 프로그래밍 (윤성우 저) Chapter 12
 

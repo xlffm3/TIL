@@ -3,7 +3,8 @@ Chapter 24 : File IO
 
 ---
 
-### fopen<br>
+fopen
+-----
 
 ```c
 FILE * fopen(const char * filename, const char * mode);
@@ -13,7 +14,8 @@ FILE * fopen(const char * filename, const char * mode);
 -	해당 함수를 통해 프로그램상에서 파일과의 스트림을 형성할 수 있다.<br><br>
 -	FILE 구조체 변수에는 파일에 대한 정보가 담기며, 포인터는 사실상 파일을 가리키는 지시자의 역할을 한다.<br><br>
 
-### fclose<br>
+fclose
+------
 
 ```c
 int main(void){
@@ -31,7 +33,8 @@ int main(void){
 -	실제로 스트림을 형성하는 주체는 운영체제이다.<br><br>
 -	해당 함수는 개방되었던 파일을 닫아주는데, 이는 운영체제가 할당한 자원을 반환하고 버퍼링 되었던 데이터를 출력하기 위함이다.<br><br>
 
-### fflush<br>
+fflush
+------
 
 ```c
 int flush(FILE * stream);
@@ -40,7 +43,8 @@ int flush(FILE * stream);
 
 -	출력 버퍼를 비우는 함수이며, 입력 버퍼를 비우는 함수는 필요하지 않다.<br><br>
 
-### 파일의 개방 모드<br>
+파일의 개방 모드<br>
+--------------------
 
 ![image](https://user-images.githubusercontent.com/56240505/71781082-fa48bb00-300d-11ea-9440-9100a4894182.png)<br><br>
 
@@ -50,7 +54,8 @@ int flush(FILE * stream);
 -	반면 바이너리 모드는 치환이 발생하지 않고, 개방 모드에 t도 b도 붙이지 않으면 파일은 기본적으로 텍스트 모드로 개방된다.<br><br>
 -	문자열이 파일에 저장될 때에는 문자열의 끝을 의미하는 널 문자는 저장되지 않고, 파일은 개행을 기준으로 문자열을 구분한다.<br><br>
 
-### feof<br>
+feof
+----
 
 ```c
 int feof(FILE * stream);
@@ -77,7 +82,8 @@ int main(void){
 
 -	파일 복사 프로그램과 같이 파일의 끝을 확인해야 하는 경우 유용하게 사용된다.<br><br>
 
-### 바이너리 데이터의 입출력 : fread, fwrite<br>
+바이너리 데이터의 입출력 : fread, fwrite
+----------------------------------------
 
 ```c
 size_t fread(void * buffer, size_t size, size_t count, FILE * stream);
@@ -117,7 +123,8 @@ int main(void){
 -	`fread` 함수는 size 크기의 데이터 count개를 파일로 읽어서 buffer에 저장한다.<br><br>
 -	`fwrite` 함수 또한 비슷한 맥락에서 실행된다.<br><br>
 
-### 서식에 따른 데이터 입출력 : fprint, fscanf<br>
+서식에 따른 데이터 입출력 : fprint, fscanf
+------------------------------------------
 
 ```c
 typedef struct fren{
@@ -147,12 +154,14 @@ int main(void){
 
 -	구조체 변수를 하나의 바이너리 데이터로 인식하여 처리할 수 있다.<br><br>
 
-### 파일 위치 지시자<br>
+파일 위치 지시자
+----------------
 
 -	파일 위치 정보의 갱신을 통해 데이터를 읽고 쓸 위치 정보를 유지하는 멤버를 파일 위치 지시자라고 한다.<br><br>
 -	파일 위치 지시자는 파일이 처음 개방되면 무조건 파일의 맨 앞부분을 가리킨다.<br><br>
 
-### fseek, ftell<br>
+fseek, ftell
+------------
 
 ```c
 int fseek(FILE * stream, long offset, int wherefrom);
@@ -194,7 +203,8 @@ int main(void){
 -	출력이 되면 파일 위치 지시자는 그 다음 인덱스를 가리키게 된다.<br><br>
 -	파일 위치 지시자의 위치 정보는 가장 앞 부분의 바이트 위치를 0으로 간주한다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	열혈 C 프로그래밍 (윤성우 저) Chapter 24
 

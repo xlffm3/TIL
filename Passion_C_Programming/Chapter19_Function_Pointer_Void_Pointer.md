@@ -3,7 +3,8 @@ Chapter 18 : Function Pointer & Void Pointer
 
 ---
 
-### Function Pointer<br>
+Function Pointer
+----------------
 
 ```c
 int SoSimple(int num1, int num2){
@@ -24,7 +25,8 @@ int main(void){
 -	fptr이 함수 포인터이며, 이를 통해 함수를 호출할 수 있다.<br><br>
 -	매개변수에도 마찬가지로 함수 포인터가 전달될 수 있다.<br><br>
 
-### Void Pointer<br>
+Void Pointer
+------------
 
 ```C
 int main(void){
@@ -39,7 +41,8 @@ int main(void){
 -	그러나 가리키는 대상에 대한 어떠한 형 정보도 담겨있지 않아, 값의 변경이나 참조가 불가능하다.<br><br>
 -	따라서 주소 값에만 의미를 두고 포인터의 형은 나중에 결정하는 등의 상황에서 쓰인다.<br><br>
 
-### main 함수로의 인자 전달<br>
+main 함수로의 인자 전달
+-----------------------
 
 ```c
 int mian(int argc, char * argv[]){
@@ -60,7 +63,8 @@ int mian(int argc, char * argv[]){
 -	main 함수로 인자를 전달하는 경우 공백을 기준으로 문자열이 나뉘며, 각각의 문자열 주소 값은 포인터 배열 argv의 원소가 된다.<br><br>
 -	cmd 창에서 입력 시, 큰 따옴표로 묶어서 입력하면 공백을 포함하는 문자열을 생성해서 인자로 전달하는 것이 가능하다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	열혈 C 프로그래밍 (윤성우 저) Chapter 19
 

@@ -3,7 +3,8 @@ Chapter 14 : Function & Pointer
 
 ---
 
-### 함수의 인자로 배열 전달<br>
+함수의 인자로 배열 전달
+-----------------------
 
 ```C
 int main(void){
@@ -22,14 +23,16 @@ void SimpleFunc(int * param){ //매개변수를 int param[]으로 대체 가능
 -	함수 내에서는 인자로 전달된 배열의 길이를 계산할 수 없다.<br><br>
 -	함수 내부에서 sizeof 연산을 할 경우, 배열의 크기가 반환되지 않고 매개변수인 포인터 변수의 크기가 반환되기 때문이다.<br><br>
 
-### Call-by-value vs. Call-by-reference<br>
+Call-by-value vs. Call-by-reference
+-----------------------------------
 
 -	함수 호출 시 단순히 값을 전달하는 형태를 Call-by-value, 메모리의 접근에 사용되는 주소 값을 전달하는 형태를 Call-by-reference라고 한다.<br><br>
 -	대표적으로 `scanf()` 함수에서 입력값을 저장하는 대상이 되는 변수에 & 연산자를 붙이는 이유이다.<br><br>
 -	메모리 주소 값을 알아야 대상 변수에 접근하여 값을 채워 넣을 수 있기 때문이다.<br><br>
 -	반면 문자열은 그 자체로 배열의 주소값을 반환하기 때문에 & 연산자를 사용하지 않는다.<br><br>
 
-### 포인터 대상의 const 선언<br>
+포인터 대상의 const 선언
+------------------------
 
 ```C
 int main(void){
@@ -52,7 +55,8 @@ int main(void){
 -	`const int * const ptr = &num` 처럼 두 가지 형태의 const 선언을 동시에 할 수 있다.<br><br>
 -	const 선언을 통해 프로그램 코드의 안정성을 높인다.<br><br>
 
-### Reference<br>
+Reference
+---------
 
 -	열혈 C 프로그래밍 (윤성우 저) Chapter 14
 
