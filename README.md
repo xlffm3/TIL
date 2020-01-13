@@ -102,7 +102,8 @@ Today I Learned
 
 -	[Chapter 6 - 7 : OOP](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter6-7_OOP.md)
 -	[Chapter 8 : 예외 처리](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter8_Exception_Handling.md)
--	[Chapter 9 : 유용한 클래스](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter9_Useful_Classes.md)</details>
+-	[Chapter 9 : 유용한 클래스](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter9_Useful_Classes.md)
+-	[Chapter 10 : 날짜와 시간 및 형식화](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter10_Date_Time_Format.md)</details>
 
 ### ***C***
 
