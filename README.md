@@ -106,7 +106,9 @@ Today I Learned
 -	[Chapter 10 : 날짜와 시간 및 형식화](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter10_Date_Time_Format.md)
 -	[Chapter 11 : 컬렉션 프레임웍](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter11_Collections_Framework.md)
 -	[Chapter 12 : 지네릭스, 열거형, 애너테이션](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter12_Generics_Enums_Annotation.md)
--	[Chapter 13 : 쓰레드](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter13_Thread.md)</details>
+-	[Chapter 13 : 쓰레드](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter13_Thread.md)
+-	[Chapter 14 : 람다와 스트림](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter14_Lambda_Stream.md)
+-	[Chapter 15 : I/O](https://github.com/xlffm3/TIL/blob/java/Java_Standards/Chapter15_IO.md)</details>
 
 ### ***C***
 
