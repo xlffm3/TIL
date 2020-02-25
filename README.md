@@ -125,6 +125,6 @@ TIL
 
 ### ***Git***
 
--	[생활코딩 : GITn](https://github.com/xlffm3/TIL/blob/git/Git_Opentutorials.md)
+-	[생활코딩 : GITn](https://github.com/xlffm3/TIL/blob/git/Git_Opentutorials.md)<br><br>
 
 ---
