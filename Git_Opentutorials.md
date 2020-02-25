@@ -1,11 +1,6 @@
 GIT
 ---
 
----
-
-GIT
----
-
 -	목적
 	-	Version
 	-	Back-Up
@@ -124,9 +119,9 @@ git rebase --continue //충돌 관리 이후 계속 진행
 -	작업이 선형적으로 일어나기 때문에, 기존의 base와 위치가 이동되는 branch의 그 다음 commit version 및 새로운 base 사이에서 3 way merge가 계속 발생한다.<br><br>
 -	마찬가지로 merge tool을 이용해서 충돌을 관리한다.<br><br>
 
+---
+
 Reference
 ---------
 
 -	[생활코딩](https://opentutorials.org/course/3838)
-
----
