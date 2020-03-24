@@ -1,3 +1,11 @@
+TCP(Transmission Control Protocol)
+----------------------------------
+
+-	Layer 4 계층 프로토콜이다.<br><br>
+-	TCP는연결 지향 서비스(Connection-Oriented Service)가 제공되므로 데이터에 대한 무결성이 보장되며 양방향 데이터 전송이 가능한 전이중 서비스(Full Duplex Service)를 제공한다.<br><br>
+-	스트림 데이터 서비스(Strem Data Service)가 제공되기 때문에 상위 계층으로부터 수신한 데이터 스트림을 세그먼트(Segment)형식의 단위로 분리하여 네트워크로 전송하며 목적지에서는 TCP에 의해서 세그먼트를 재조립한다.<br><br>
+-	만약 전송된 세그먼트에 대한 응답을 정해진 타이머 안에 수신하지 못하면 해당 세그먼트를 재전송함으로 신뢰적인 서비스(Reliability Service)를 제공한다.<br><br>
+
 TCP & UDP
 ---------
 
@@ -6,14 +14,6 @@ TCP & UDP
 -	TCP/IP 프로토콜은 이기종 시스템간의 통신을 위한 표준 프로토콜로, 프로토콜의 집합이다.<br><br>
 -	TCP와 UDP 모두 TCP/IP 프로토콜에 속하며, OSI 7계층의 전송 계층에 해당하는 프로토콜이다.<br><br>
 -	두 프로토콜은 전송 방식이 다르며, 장단점이 있다.<br><br>
-
-TCP(Transmission Control Protocol)
-----------------------------------
-
--	Layer 4 계층 프로토콜이다.<br><br>
--	TCP는연결 지향 서비스(Connection-Oriented Service)가 제공되므로 데이터에 대한 무결성이 보장되며 양방향 데이터 전송이 가능한 전이중 서비스(Full Duplex Service)를 제공한다.<br><br>
--	스트림 데이터 서비스(Strem Data Service)가 제공되기 때문에 상위 계층으로부터 수신한 데이터 스트림을 세그먼트(Segment)형식의 단위로 분리하여 네트워크로 전송하며 목적지에서는 TCP에 의해서 세그먼트를 재조립한다.<br><br>
--	만약 전송된 세그먼트에 대한 응답을 정해진 타이머 안에 수신하지 못하면 해당 세그먼트를 재전송함으로 신뢰적인 서비스(Reliability Service)를 제공한다.<br><br>
 
 Connection-Oriented Service
 ---------------------------
@@ -70,7 +70,7 @@ Congestion Control
 TCP Header
 ----------
 
-![image](https://user-images.githubusercontent.com/56240505/77326237-dcf9d200-6d5c-11ea-95ac-cbc70fcb902d.png)<br><br>
+![image](https://user-images.githubusercontent.com/56240505/77376203-1d843a80-6db3-11ea-9536-96eedeaf650a.png)<br><br> ![image](https://user-images.githubusercontent.com/56240505/77376223-31c83780-6db3-11ea-935f-895cbc4c37fc.png)<br><br>
 
 -	TCP 헤더는 20byte이며 헤더 안에는 3-way Handshaking, 순서화 기능, 동기화 기능, 재전송 기능, 흐름 제어, 오류 제어, 오류 정정, 혼잡 제어를 하기 위한 필드 값과 포트번호가 포함되어 있다.<br><br>
 
@@ -104,54 +104,10 @@ TCP 프로토콜을 사용하는 어플리케이션 프로토콜
 -	SMTP(Port 25)
 -	POP(Port 110)<br><br>
 
-UDP(User Datagram Protocol)
----------------------------
-
--	Layer 4 계층 프로토콜이다.<br><br>
--	UDP는 비연결 지향 서비스(Connectionless Service)가 제공되므로 송신측과 수신측간에 접속 절차를 거치지 않고 수신측에서 요청을 실시하면 송신측에서 바로 데이터를 전송한다.<br><br>
--	또한 TCP에서 통신 연결과 제어를 담당하는 3-way Handshaking, 데이터 스트림 서비스, 재전송 서비스, 혼잡 제어 기능을 수행하지 않는다.<br><br>
-
-Best Effort Service
--------------------
-
--	UDP는 최선을 다해 목적지까지 데이터를 전송하지만 신뢰성을 보장하는 서브사가 없기 때문에 이를 어플리케이션 계층에서 해결해야 한다.<br><br>
--	대신 신뢰성을 보장하는 서비스로 인한 데이터 전송 지연이 발생하지 않기 때문에 신속한 데이터 전송이 가능하며 이러한 특징 때문에 실시간으로 트래픽을 전송하는 멀티미디어 서비스에 주로 사용한다.<br><br>
-
-UDP 프로토콜을 사용하는 경우
-----------------------------
-
--	단순한 데이터 요청과 응답을 하는 경우.<br><br>
--	오류 제어가 크게 필요하지 않은 경우.<br><br>
--	내부적으로 흐름 제어와 오류 제어 매커니즘을 갖고 있는 경우.<br><br>
--	멀티캐스트와 브로드케스트 서비스.<br><br>
-
-UDP Header
-----------
-
-![image](https://user-images.githubusercontent.com/56240505/77326310-f733b000-6d5c-11ea-8d75-9e3fd5e71694.png)<br><br>
-
--	①, ② : 출발지, 목적지에서 수행되는 프로세스가 사용하는 포트 번호이다.<br><br>
-
--	③ : 헤더와 데이터를 합한 사용자 데이터그램의 전체 길이를 정의하는 필드이다.<br><br>
-
--	④ : 사용자 데이터그램에 대한 오류 검사를 담당하는 필드로서, 오류가 확인되면 재전송하지 않고 그냥 폐기한다.<br><br>
-
--	이처럼 UDP는 신뢰성을 보장하는 서비스 기반이 아니기 때문에 TCP 헤더에 비해서 상당히 간략한 편이다.<br><br>
-
-UDP 프로토콜을 사용하는 어플리케이션 프로토콜 및 라우팅 프로토콜
-----------------------------------------------------------------
-
--	DNS(Port 53)
--	DHCP(Port 67/68)
--	TFTP(Port 69)
--	SNMP(Port 161)
--	NTP(Port 123)
--	RIP(Port 520)<br><br>
-
 ---
 
 Reference
 ---------
 
 -	[TCP?](https://m.blog.naver.com/hatesunny/220790242308)
--	[UDP? UDP 헤더](https://m.blog.naver.com/hatesunny/220790304526)
+-	[TCP 헤더](https://m.blog.naver.com/hatesunny/220790300052)
