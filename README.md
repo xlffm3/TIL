@@ -127,18 +127,18 @@ TIL
 
 <details><summary> Netwhat (42 Seoul : 42 Cursus)</summary>
 
--	[Network & Protocol](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/Network_Protocol.md)
--	[IP](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/IP.md)
--	[Subnet Mask](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/Subnet_Mask.md)
--	[Data Address](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/Data_Address.md)
--	[OSI](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/OSI.md)
--	[DNS](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/DNS.md)
--	[DHCP](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/DHCP.md)
--	[TCP](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/TCP.md)
--	[UDP](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/UDP.md)
--	[Routing](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/Routing.md)
--	[Gateway](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/Gateway.md)
--	[Port](https://github.com/xlffm3/TIL/blob/master/Network/netwhat/Port.md)</details>
+-	[Network & Protocol](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/Network_Protocol.md)
+-	[IP](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/IP.md)
+-	[Subnet Mask](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/Subnet_Mask.md)
+-	[Data Address](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/Data_Address.md)
+-	[OSI](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/OSI.md)
+-	[DNS](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/DNS.md)
+-	[DHCP](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/DHCP.md)
+-	[TCP](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/TCP.md)
+-	[UDP](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/UDP.md)
+-	[Routing](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/Routing.md)
+-	[Gateway](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/Gateway.md)
+-	[Port](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/Port.md)</details>
 -	[SSL](https://github.com/xlffm3/TIL/blob/master/Network/SSL.md)<br>
 
 ### ***Git***
