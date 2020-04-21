@@ -1,4 +1,5 @@
-#Chapter 6 : Environment - Profile
+Chapter 6 : Environment - Profile
+=================================
 
 Environment
 -----------

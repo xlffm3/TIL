@@ -1,4 +1,5 @@
-#Chapter 2 : ApplicationContext & Bean Setting
+Chapter 2 : ApplicationContext & Bean Setting
+=============================================
 
 Spring IoC Container의 역할
 ---------------------------
