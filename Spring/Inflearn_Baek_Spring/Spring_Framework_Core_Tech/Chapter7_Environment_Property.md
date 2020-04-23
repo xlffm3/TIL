@@ -32,7 +32,7 @@ public class AppRunner implements ApplicationRunner {
 }
 ```
 
--	Property란 다양한 방법으로 정의할 수 있는 설정값을 의미하며 계층적인 Key-Value이다.
+-	Property란 다양한 방법으로 정의할 수 있는 설정값을 의미하며 계층적인 Key-Value이다.<br><br>
 -	Environment의 역할은 Property 소스 설정 및 값 가져오기다.<br><br>
 -	Property(StandardServletEnvironment)의 우선순위.
 	-	ServletConfig 매개변수.
