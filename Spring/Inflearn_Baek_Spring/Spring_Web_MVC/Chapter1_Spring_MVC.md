@@ -1,4 +1,5 @@
-##MVC(Model-View-Controller)
+MVC(Model-View-Controller)
+--------------------------
 
 -	Model : 도메인 객체 또는 DTO로 화면에 전달하거나 화면에서 전달 받은 데이터를 담고 있는 객체를 의미한다.<br><br>
 -	View : HTML, JSON, XMl 등 데이터를 보여주는 역할이다.<br><br>
