@@ -1,6 +1,3 @@
-Chapter 5 : Bean Scope
-======================
-
 Scope
 =====
 
@@ -48,7 +45,7 @@ public class AppRunner implements ApplicationRunner {
 
 -	Singleton : 해당 빈의 인스턴스가 어플리케이션에서 단 1개인 것을 의미한다.<br><br>
 -	Prototype : 해당 빈의 인스턴스가 어플리케이션에서 여러 개인 것을 의미한다.<br><br>
--	Singleton 인스턴스는 ApplicationContext 초기 구동시 생성되며, Thread-Safe 하지 않다.<br><br>
+-	Singleton 인스턴스는 ApplicationContext 초기 구동시 생성되며, Property가 공유되기 때문에 Thread-Safe 하지 않다.<br><br>
 -	Bean Scope가 Prototype인 경우 참조될 때 마다 다른 인스턴스가 생성되어 다른 주소값이 출력된다.<br><br>
 -	Prototype이 Singleton을 참조하는 경우 문제가 없지만, Singleton이 Prototype을 참조하는 경우 프로퍼티인 Prototype Bean이 변경되지 않는 문제가 발생한다.<br><br>
 -	위 예제는 Singleton Bean이 생성된 시점에 지닌 Proto의 동일한 주소 3개를 출력한다.<br><br>

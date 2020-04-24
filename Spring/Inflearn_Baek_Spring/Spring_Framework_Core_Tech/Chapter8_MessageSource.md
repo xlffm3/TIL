@@ -1,6 +1,3 @@
-Chapter 7 : MessageSource
-=========================
-
 MessageSource
 -------------
 
@@ -39,7 +36,7 @@ public class AppRunner implements ApplicationRunner {
 
 -	국제화(i18n) 기능을 제공하는 인터페이스이다.<br><br>
 -	MessageSource를 구현하는 ApplicationContext의 `getMessage(String code, Object[] args, String, default, Locale, loc)` 메소드 등을 이용한다.<br><br>
--	Spring Boot를 이용하면 별다른 설정 없이 message 관련 properties를 이용할 수 있다.<br><br>
+-	Spring Boot를 이용하면 자동으로 Bean이 등록되어 별다른 설정 없이 message 관련 properties를 이용할 수 있다.<br><br>
 
 릴로딩 기능이 있는 MessageSource
 --------------------------------

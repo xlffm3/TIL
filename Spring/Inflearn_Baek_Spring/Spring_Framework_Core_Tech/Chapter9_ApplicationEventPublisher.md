@@ -1,6 +1,3 @@
-Chapter 9 : ApplicationEventPublisher
-=====================================
-
 ApplicationEventPublisher
 -------------------------
 

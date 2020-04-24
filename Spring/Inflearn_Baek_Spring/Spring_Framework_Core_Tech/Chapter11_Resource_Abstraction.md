@@ -1,11 +1,8 @@
-Chapter 11 : Resource Abstraction
-=================================
-
 Resource Abstraction
 --------------------
 
 -	org.springframework.core.io.Resource.<br><br>
--	java.net.URL을 추상화 한 것이며, 스프링 내부에서 많이 사용하는 인터페이스이다.<br><br>
+-	java.net.URL을 추상화 한 것이며, Spring 내부에서 많이 사용하는 인터페이스이다.<br><br>
 -	추상화 이유.
 	-	클래스패스 기준으로 리소스 읽어오는 기능이 없다.
 	-	ServletContext를 기준으로 상대 경로로 읽어오는 기능이 없다.

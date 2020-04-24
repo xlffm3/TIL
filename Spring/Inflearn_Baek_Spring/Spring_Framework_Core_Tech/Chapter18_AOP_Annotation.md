@@ -1,6 +1,3 @@
-Chapter 17 : @AOP
-=================
-
 Dependency 추가
 ---------------
 
@@ -23,7 +20,7 @@ public class PerfAspect {
 
     @Around("execution(* com.example..*.EventService.*(..))")
     @Around("@annotation(PerLogging)")
-    @Bean("bean(SimpleEventService)")
+    @Around("bean(SimpleEventService)")
     public Object logPeer(ProceedingJoinPoint pip) throws Throwable {
         long begin = System.currentTimeMillis();
         System.out.println();
@@ -34,7 +31,8 @@ public class PerfAspect {
 }
 ```
 
--	Pointcut은 @Pointcut(표현식)도 가능하며 &&와 || 및 ! 등의 식을 사용할 수 있다.<br><br>
+-	Pointcut은 @Pointcut(표현식)도 가능하며, 주요 표현식은 execution과 @annotation 및 bean 등이 있다.<br><br>
+-	Pointcut 조합으로 &&와 || 및 ! 등의 표현을 사용할 수 있다.<br><br>
 -	특정 Annotation 지시를 통해 일부 메서드의 AOP 지정을 누락시킬 수 있다.<br><br>
 -	Advice는 @Around 외에도 @Before 와 @AfterReturning 및 @AfterThrowing 등을 통해 Joint Point 시점을 조정할 수 있다.<br><br>
 

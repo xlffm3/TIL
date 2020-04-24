@@ -1,8 +1,22 @@
-Chapter 12 : Validation Abstraction
-===================================
-
 Validation Abstraction
 ----------------------
+
+> EventValidator.java
+
+```java
+public class EventValidator implements Validator {
+
+  @Override
+  public boolean supports(Class<?> clazz) {
+    retrun Event.class.equals(clazz);
+  }
+
+  @Override
+  public void validate(Object target, Errors errors) {
+    ValidationUtils.rejectIfEmptyOrWhitespaces(errors, "ttitle", "not empty");
+  }
+}
+```
 
 -	org.springframework.validation.Validator.<br><br>
 -	애플리케이션에서 사용하는 객체 검증용 인터페이스이다.<br><br>
@@ -14,6 +28,36 @@ Validation Abstraction
 
 스프링 부트 2.0.5 이상 버전
 ---------------------------
+
+> Event.java
+
+```java
+public class Event {
+
+  @NotEmpty
+  String title;
+
+  @Min(0)
+  Integer limit;
+}
+```
+
+<br>
+
+> AppRunner.java
+
+```java
+public class AppRunner implements ApplicationRunner {
+
+  @Autowired
+  Validator validator;
+
+  public void run(ApplicationArguments args) throws Exception {
+    Event event = new Event();
+    validator.validate(evnt, errors);
+  }
+}
+```
 
 -	LocalValidatorFactoryBean 빈으로 자동 등록되어 Validator 인스턴스를 Autowired할 수 있다.<br><br>
 -	JSR-380(Bean Validation 2.0.1) 구현체로 hibernate-validator를 사용한다.<br><br>

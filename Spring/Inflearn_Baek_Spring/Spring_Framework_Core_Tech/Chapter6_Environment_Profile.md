@@ -1,6 +1,3 @@
-Chapter 6 : Environment - Profile
-=================================
-
 Environment
 -----------
 
@@ -45,9 +42,9 @@ Profile
 -	Bean들의 그룹을 의미한다.<br><br>
 -	Environment의 역할은 활성화 할 Profile의 확인 및 설정이다.<br><br>
 -	특정 환경에서는 사용하고 싶은 Bean이 다를 경우 이용한다.<br><br>
--	테스트 환경 등이 대표적인 유스케이스이다.<br><br>
+-	테스트 환경 구성 등이 대표적인 유스케이스이다.<br><br>
 -	클래스 및 메소드에 각각 정의할 수 있다.<br><br>
--	-Dspring.profiles.avtive=”test,A,B,...” 혹은 @ActiveProfiles Annotation을 통해 Profile을 설정한다.<br><br>
+-	`-Dspring.profiles.avtive=”test,A,B,...”` 혹은 @ActiveProfiles Annotation을 통해 Profile을 설정한다.<br><br>
 
 Profile 표현식
 --------------

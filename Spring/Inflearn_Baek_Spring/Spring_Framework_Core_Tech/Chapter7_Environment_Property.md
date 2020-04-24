@@ -1,6 +1,3 @@
-Chapter 7 : Environment - Property
-==================================
-
 Property
 --------
 
@@ -8,6 +5,14 @@ Property
 
 ```properties
 -Dapp.about=spring
+```
+
+<br>
+
+> Application.java
+
+```java
+@PropertySource("classpath:/application.properties")
 ```
 
 <br>
@@ -45,7 +50,7 @@ public class AppRunner implements ApplicationRunner {
 ----
 
 -	@PropertySource : Environment를 통해 Property를 추가한다.<br><br>
--	Spring Boot는 기본 Property 소스(application.properties)를 지원하며, Profile까지 고려한 계층형 Property 우선 순위를 제공한다.
+-	Spring Boot는 기본 Property 소스(application.properties)를 지원하며, Profile까지 고려한 계층형 Property 우선 순위를 제공한다.<br><br>
 
 ---
 

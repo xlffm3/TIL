@@ -1,6 +1,3 @@
-Chapter 10 : ResourceLoader
-===========================
-
 ResourceLoader
 --------------
 

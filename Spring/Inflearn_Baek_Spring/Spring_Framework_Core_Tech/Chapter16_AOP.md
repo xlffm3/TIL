@@ -1,6 +1,3 @@
-Chapter 16 : AOP(Aspect-Oriented Programming)
-=============================================
-
 AOP(Aspect-Oriented Programming)
 --------------------------------
 
