@@ -23,11 +23,11 @@ Servlet Lifecycle
 
 -	Servlet 컨테이너가 Servlet 인스턴스의 `init()` 메소드를 호출하여 초기화 한다.<br><br>
 -	최초 요청을 받았을 때 한번 초기화 하고 나면 그 다음 요청부터는 이 과정을 생략한다.<br><br>
--	Servlet이 초기화 된 다음부터 클라이언트의 요청을 처리할 수 있다.
+-	Servlet이 초기화 된 다음부터 클라이언트의 요청을 처리할 수 있다.<br><br>
 -	각 요청은 별도의 쓰레드로 처리하고 이때 Servlet 인스턴스의 `service()` 메소드를 호출한다.<br><br>
 -	이 안에서 HTTP 요청을 받고 클라이언트로 보낼 HTTP 응답을 만든다.<br><br>
 -	`service()`는 보통 HTTP Method에 따라 `doGet()`, `doPost()` 등으로 처리를 위임한다.<br><br>
--	따라서 보통 `doGet()` 또는 `doPost()`를 구현한다.
+-	따라서 보통 `doGet()` 또는 `doPost()`를 구현한다.<br><br>
 -	Servlet 컨테이너 판단에 따라 해당 Servlet을 메모리에서 내려야 할 시점에 `destroy()`를 호출한다.<br><br>
 
 ---
