@@ -51,6 +51,12 @@ public class SimpleController implements Controller {
 
 -	HandlerMapping : BeanNameUrlHandlerMapping.<br><br>
 -	HandlerAdapter : SimpleControllerHandlerAdapter.<br><br>
+-	Handler는 SimpleController 클래스이다.<br><br>
+-	RequestMappingHandlerAdapter는 Annotation 기반의 Spring MVC 핸들러를 실행하며, SimpleControllerHandlerAdapter가 Controller 인터페이스를 구현한 핸들러를 실행할 수 있다.<br><br>
+-	ResponseBody가 없는 경우이다.<br><br>
+-	리턴된 뷰 네임을 기반으로 ModelAndView 객체를 생성하고, InternalResourceViewResolver를 통해 뷰 네임에 해당하는 실제 리소스를 찾는다.<br><br>
+-	이후 Model 객체를 바인딩하여 View를 렌더링한다.<br><br>
+-	렌더링의 의미는 만들어놓은 JSP 등 리소스를 Response에 실어서 보낸다는 의미이다.<br><br>
 
 Custom ViewResolver
 -------------------
