@@ -20,6 +20,7 @@ spring.mvc.view.suffix=.jsp
 -	특히 Formatter 및 Converter 등을 WebMvcConfigurer 인터페이스를 구현하여 등록할 수 있으나, Bean만 등록하면 자동으로 이용이 가능하다.<br><br>
 -	@Configuration + Implements WebMvcConfigurer : Spring Boot의 MVC 자동 설정 및 추가 설정을 위한 형태이다.<br><br>
 -	@Configuration + @EnableWebMvc + Imlements WebMvcConfigurer : Spring Boot의 MVC 자동 설정을 사용하지 않는다.<br><br>
+-	가급적 application.properties를 먼저 고려해보고, WebMvcConfigurer를 사용해도 원하는 기능을 구현하기 어려울 때 직접 Bean을 등록한다.<br><br>
 
 Spring Boot에서 JSP 사용하기
 ----------------------------
