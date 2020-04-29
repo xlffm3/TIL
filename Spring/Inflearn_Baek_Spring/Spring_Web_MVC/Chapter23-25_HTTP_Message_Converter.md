@@ -55,7 +55,7 @@ public void message() throws Exception {
 
 	-	메이븐 또는 그래들 설정에 의존성을 추가하면 그에 따른 컨버터가 자동으로 등록 된다.
 
-	-	WebMvcConfigurationSupport
+	-	WebMvcConfigurationSupport.
 
 	-	이 기능 자체는 스프링 프레임워크의 기능이다.<br><br>
 

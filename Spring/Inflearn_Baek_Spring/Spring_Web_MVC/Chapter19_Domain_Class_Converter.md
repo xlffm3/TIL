@@ -5,12 +5,12 @@ Domain Class Converter
 
 ```xml
 <dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-starter-data-jpa</artifactId>
+  <groupId>org.springframework.boot</groupId>
+  <artifactId>spring-boot-starter-data-jpa</artifactId>
 </dependency>
 <dependency>
-<groupId>com.h2database</groupId>
-<artifactId>h2</artifactId>
+  <groupId>com.h2database</groupId>
+  <artifactId>h2</artifactId>
 </dependency>
 ```
 
@@ -34,6 +34,17 @@ public class Person {
 
 ```java
 public interface PersonRepository extends JpaRepository<Person, Long> {
+}
+```
+
+<br>
+
+> SimpleController.java
+
+```Java
+@GetMapping("/hello")
+public String hello(@RequestParam("id") Person person) {
+    return "hello " + person.getName();
 }
 ```
 
