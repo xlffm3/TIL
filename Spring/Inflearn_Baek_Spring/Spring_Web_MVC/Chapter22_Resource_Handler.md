@@ -15,7 +15,7 @@ public class WebConfig implements WebMvcConfigurer {
 ```
 
 -	이미지, 자바스크립트, CSS 그리고 HTML 파일과 같은 정적인 리소스를 처리하는 핸들러이다.<br><br>
--	디폴트(Default) 서블릿은 서블릿 컨테이너가 기본으로 제공하는 서블릿으로 정적인 리소스를 처리할 때 사용한다.<br><br>
+-	디폴트(Default) 서블릿은 WAS 등 서블릿 컨테이너가 기본으로 제공하는 서블릿으로 정적인 리소스를 처리할 때 사용한다.<br><br>
 -	Spring은 이러한 디폴트 서블릿에 요청을 위임해서 정적인 리소스를 처리한다.<br><br>
 -	Spring Boot는 기본 정적 리소스 핸들러 및 캐싱을 제공한다.<br><br>
 

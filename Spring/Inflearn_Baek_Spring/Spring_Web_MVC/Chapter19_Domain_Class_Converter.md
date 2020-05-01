@@ -68,6 +68,7 @@ class SampleControllerTest {
     public void hello() throws Exception{
         Person person = new Person();
         person.setName("jipark");
+        person.setId(10);
         Person savedPerson = personRepository.save(person);
         this.mockMvc.perform(get("/hello").param("id", savedPerson.getId() + ""))
                 .andDo(print())

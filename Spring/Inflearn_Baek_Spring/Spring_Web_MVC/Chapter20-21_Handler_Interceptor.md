@@ -11,7 +11,7 @@ boolean preHandle(request, response, handler)
 
 -	핸들러 실행하기 전에 호출된다.<br><br>
 -	“핸들러"에 대한 정보를 사용할 수 있기 때문에 서블릿 필터에 비해 보다 세밀한 로직을 구현할 수 있다.<br><br>
--	리턴값으로 계속 다음 인터셉터 또는 핸들러로 요청,응답을 전달할지(true) 응답 처리가 이곳에서 끝났는지(false) 알린다.<br><br>
+-	리턴값으로 계속 다음 인터셉터 또는 핸들러로 요청 및 응답을 전달할지(true) 혹은 응답 처리가 이곳에서 끝났는지(false) 알린다.<br><br>
 
 void postHandle(request, response, modelAndView)
 ------------------------------------------------
