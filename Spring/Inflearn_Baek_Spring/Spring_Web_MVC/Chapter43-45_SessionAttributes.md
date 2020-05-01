@@ -5,7 +5,7 @@
 
 ```java
 @Controller
-@SessionAttributes({"events", "book"})
+@SessionAttributes({"event", "book"})
 public class SampleController {
 
     @GetMapping("/events/form")
@@ -30,6 +30,7 @@ public void eventTest() throws Exception {
 ```
 
 -	HttpSession을 직접 사용할 수도 있지만, 애노테이션에 설정한 이름에 해당하는 모델 정보를 자동으로 세션에 넣어준다.<br><br>
+-	@SessionAttributes에 명시된 이름의 Model Attribute를 자동으로 Session에 담아준다.<br><br>
 -	@ModelAttribute는 세션에 있는 데이터도 바인딩한다.<br><br>
 -	여러 화면(또는 요청)에서 사용해야 하는 객체를 공유할 때 사용한다.<br><br>
 -	SessionStatus를 사용해서 세션 처리 완료를 알리며, 폼 처리가 끝나고 세션을 비울 때 사용한다.<br><br>

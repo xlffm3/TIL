@@ -64,7 +64,7 @@ public class SampleController {
 
 > SimpleControllerTest.java
 
-```code
+```java
 @Test
 public void hello() throws Exception {
     this.mockMvc.perform(get("/hello")
@@ -77,7 +77,7 @@ public void hello() throws Exception {
 ```
 
 -	@RequestMapping(produces=”application/json”).<br><br>
--	Accept 헤더로 필터링한다..<br><br>
+-	Accept 헤더로 필터링한다.<br><br>
 -	매치 되지 않는 경우에 406 Not Acceptable 응답한다.<br><br>
 
 주의사항

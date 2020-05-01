@@ -6,7 +6,12 @@ ModelAttribute의 또 다른 사용법
 ```java
 @ModelAttribute
 public void subjects(Model model) {
-    model.addAttribute("subjects", List.of("study", "seminar", "hobby", "social"));
+    model.addAttribute("categories", List.of("study", "seminar", "hobby", "social"));
+}
+//혹은
+@ModelAttribute("categories")
+public List<String> subjects() {
+  return new ArrayList<>().of("중략");
 }
 
 @GetMapping("/events/form/name")

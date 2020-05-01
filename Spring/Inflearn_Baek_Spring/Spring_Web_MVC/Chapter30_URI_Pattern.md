@@ -39,7 +39,7 @@ public class SampleController {
 URI 확장자 맵핑 지원
 --------------------
 
--	Spring MVC는 @RequestMapping({"/jipark"}, "/jipark.\*"})을 자동으로 지원한다.<br><br>
+-	Spring MVC는 @RequestMapping({"/jipark", "/jipark.\*"})을 자동으로 지원한다.<br><br>
 -	이 기능은 권장하지 않고, Spring Boot는 기본으로 이 기능을 사용하지 않도록 설정한다.
 	-	보안 이슈 (RFD Attack).
 	-	URI 변수, Path 매개변수, URI 인코딩 등을 사용할 때 할 때 불명확하다.<br><br>

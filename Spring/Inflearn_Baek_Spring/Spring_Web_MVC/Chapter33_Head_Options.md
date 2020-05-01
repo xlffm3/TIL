@@ -25,7 +25,7 @@ HEAD
 OPTIONS
 -------
 
--	사용할 수 있는 HTTP Method 목록을 제공한다.
+-	사용할 수 있는 HTTP Method 목록을 제공한다.<br><br>
 -	서버 또는 특정 리소스가 제공하는 기능을 확인할 수 있다.<br><br>
 -	서버는 Allow 응답 헤더에 사용할 수 있는 HTTP Method 목록을 제공해야 한다.<br><br>
 
