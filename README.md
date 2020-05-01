@@ -77,7 +77,7 @@ TIL
 -	[모델 @ModelAttribute](https://github.com/xlffm3/TIL/blob/master/Spring/Inflearn_Baek_Spring/Spring_Web_MVC/Chapter52_ModelAttribute.md)
 -	[@InitBinder](https://github.com/xlffm3/TIL/blob/master/Spring/Inflearn_Baek_Spring/Spring_Web_MVC/Chapter53_InitBinder.md)
 -	[@ExceptionHandler](https://github.com/xlffm3/TIL/blob/master/Spring/Inflearn_Baek_Spring/Spring_Web_MVC/Chapter54_ExceptionHandler.md)
--	[controller advice](https://github.com/xlffm3/TIL/blob/master/Spring/Inflearn_Baek_Spring/Spring_Web_MVC/Chapter55_ControllerAdvice.md)
+-	[@ControllerAdvice](https://github.com/xlffm3/TIL/blob/master/Spring/Inflearn_Baek_Spring/Spring_Web_MVC/Chapter55_ControllerAdvice.md)
 
 </details>
 
