@@ -113,12 +113,38 @@ interface Test{
 }
 ```
 
+<br>
+
+```java
+public interface Vehicle {
+    public int num = 10;
+
+    public void test();
+    public void test2();
+}
+
+abstract class Car implements Vehicle {
+    public void test() {
+        System.out.println("test");
+    }
+}
+
+class Taxi extends Car {
+    public void test2() {
+        System.out.println("test2");
+    }
+}
+
+interface Fightable extends Movable, Attackable {}
+```
+
 -	일종의 추상 클래스이지만, 추상화 정도가 높아서 일반 메서드 또는 멤버 변수를 구성원으로 가질 수 없다.<br><br>
 -	오직 추상 메서드와 상수만을 멤버로 가진다.<br><br>
 -	추상 클래스가 미완성 설계도라면, 인터페이스는 기본 설계도이다.<br><br>
 -	멤버 변수와 메서드의 앞에 붙는 제약어는 공통 사항이지만, 이를 생략할 수 있다.<br><br>
 -	그러나 static 메서드와 디폴트 메서드는 예외이다.<br><br>
 -	만일 인터페이스를 상속 받은 클래스가 인터페이스의 메서드 중 일부만 구현한다면, abstract를 붙여 추상 클래스로 선언해야 한다.<br><br>
+-	인터페이스는 인터페이스로부터만 상속받을 수 있다.<br><br>
 -	인터페이스를 통해 다중 상속의 장점을 실현할 수 있다.<br><br>
 
 인터페이스의 장점
