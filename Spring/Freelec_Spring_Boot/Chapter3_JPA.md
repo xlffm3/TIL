@@ -173,7 +173,11 @@ public class PostsRepositoryTest extends TestCase {
         String content = "content";
         String author = "author";
 
-        postsRepository.save(Posts.builder().title(title).content(content).author(author).build());
+        postsRepository.save(Posts.builder()
+				.title(title)
+				.content(content)
+				.author(author)
+				.build());
         List<Posts> list = postsRepository.findAll();
         Posts posts = list.get(0);
         assertThat(posts.getTitle()).isEqualTo(title);
@@ -188,7 +192,8 @@ public class PostsRepositoryTest extends TestCase {
 
 ```java
 spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.properties.hibernate.dialect=
+org.hibernate.dialect.MySQL5InnoDBDialect
 ```
 
 -	여러 테스트가 동시에 수행되면 테스트용 DB인 H2에 데이터가 남아 있을 수 있기 때문에, 단위 테스트가 끝날 때 마다 수행하는 메소드를 지정한다.
@@ -242,7 +247,11 @@ public class PostsSaveRequestDto {
     }
 
     public Posts toEntity() {
-        return Posts.builder().title(this.title).content(this.content).author(this.author).build();
+        return Posts.builder()
+				.title(this.title)
+				.content(this.content)
+				.author(this.author)
+				.build();
     }
 }
 ```
@@ -320,10 +329,17 @@ public class PostsApiControllerTest extends TestCase {
         String title = "title";
         String content = "content";
         String author = "author";
-        PostsSaveRequestDto requestDto = PostsSaveRequestDto.builder().title(title).content(content).author(author).build();
+        PostsSaveRequestDto requestDto =
+				 PostsSaveRequestDto.builder()
+				 .title(title)
+				 .content(content)
+				 .author(author)
+				 .build();
         String url = "http://localhost:" + port + "/api/v1/posts";
 
-        ResponseEntity<Long> responseEntity = restTemplate.postForEntity(url, requestDto, Long.class);
+        ResponseEntity<Long> responseEntity =
+				restTemplate.postForEntity
+				(url, requestDto, Long.class);
         assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(responseEntity.getBody()).isGreaterThan(0L);
         List<Posts> list = postsRepository.findAll();
@@ -445,17 +461,29 @@ public void updateTest() throws Exception {
     String title = "title";
     String content = "content";
     String author = "author";
-    Posts savedPosts = postsRepository.save(Posts.builder().title(title).content(content).author(author).build());
+    Posts savedPosts = postsRepository.save(Posts
+		.builder()
+		.title(title)
+		.content(content)
+		.author(author)
+		.build());
 
     Long id = savedPosts.getId();
     String expectedTitle = "title2";
     String expectedContent = "content2";
 
-    PostsUpdateRequestDto requestDto = PostsUpdateRequestDto.builder().title(expectedTitle).content(expectedContent).build();
+    PostsUpdateRequestDto requestDto = PostsUpdateRequestDto
+		.builder()
+		.title(expectedTitle)
+		.content(expectedContent)
+		.build();
     String url = "http://localhost:" + port + "/api/v1/posts/" + id;
-    HttpEntity<PostsUpdateRequestDto> requestEntity = new HttpEntity<>(requestDto);
+    HttpEntity<PostsUpdateRequestDto> requestEntity =
+		new HttpEntity<>(requestDto);
 
-    ResponseEntity<Long> responseEntity = restTemplate.exchange(url, HttpMethod.PUT, requestEntity, Long.class);
+    ResponseEntity<Long> responseEntity =
+		restTemplate.exchange(url, HttpMethod.PUT, requestEntity,
+		Long.class);
 
     assertThat(responseEntity.getStatusCode()).isEqualTo(HttpStatus.OK);
     assertThat(responseEntity.getBody()).isGreaterThan(0L);
@@ -524,7 +552,12 @@ public class BaseTimeEntity {
 @Test
 public void dateTest() {
     LocalDateTime now = LocalDateTime.of(2019, 6, 4, 0, 0, 0);
-    postsRepository.save(Posts.builder().title("title").content("content").author("author").build());
+    postsRepository.save(Posts
+		.builder()
+		.title("title")
+		.content("content")
+		.author("author")
+		.build());
 
     List<Posts> list = postsRepository.findAll();
     Posts posts = list.get(0);
