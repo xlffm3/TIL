@@ -22,7 +22,7 @@ compile('org.springframework.boot:spring-boot-starter-mustache')
 
 ```java
 @RunWith(SpringRunner.class)
-@SpringBootTest
+@SpringBootTest(webEnvironment = RANDOM_PORT)
 public class IndexControllerTest extends TestCase {
 
     @Autowired
