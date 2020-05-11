@@ -80,5 +80,5 @@ assertThat(thrown)
 Reference
 ---------
 
--	[AssertJ Exception Assertions](https://www.baeldung.com/assertj-exception-assertion)
+*	[AssertJ Exception Assertions](https://www.baeldung.com/assertj-exception-assertion)
 * [Introduction to AssertJj](https://www.baeldung.com/introduction-to-assertj)
