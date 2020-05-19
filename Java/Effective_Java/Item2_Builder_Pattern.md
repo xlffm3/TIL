@@ -84,7 +84,7 @@ Information Information = new Information.Builder(15).b(98).c(333).build();
   * API는 시간이 지날수록 매개변수가 많아지는 경향이 있다.
   * 매개변수 중 다수가 필수가 아니거나 같은 타입이면 빌더 패턴이 더 낫다.
   * 점층적 생성자보다 코드가 읽고 쓰기 간결하며, 자바 빈즈보다 훨씬 안전하다.
-
+* Lombok!
 
 <br>
 
