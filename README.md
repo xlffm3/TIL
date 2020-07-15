@@ -1,3 +1,10 @@
+# Notice
+
+* **현재는 Blog를 통해 TIL을 정리하고 있으며, 해당 Repository는 더이상 사용하지 않습니다.**
+  * [Blog 바로가기](https://xlffm3.github.io/)
+
+<br>
+
 TIL
 ===
 
