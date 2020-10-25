@@ -198,7 +198,7 @@ TIL
 
 ### ***Network***
 
-<details><summary> Netwhat (42 Seoul : 42 Cursus)</summary>
+<details><summary> Network 개념 정리</summary>
 
 -	[Network & Protocol](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/Network_Protocol.md)
 -	[IP](https://github.com/xlffm3/TIL/blob/master/Network/Netwhat/IP.md)
